@@ -1,0 +1,96 @@
+/*	Page sections (layout & spacing)
+********************/
+/*
+These selectors will eventually be removed when colour theming is implemented.
+*/
+.bg-default {
+  background: #fff; }
+
+.bg-alternative {
+  background: #e7e7e9; }
+
+.bg-primary {
+  background: #e1301e;
+  color: #fff; }
+
+/* bg-default*/
+.maxPadding .container {
+  /*padding-top:60px;*/
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.regPadding .container {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.page-section {
+  padding: 20px 0; }
+
+@media (min-width: 768px) {
+  .page-section {
+    padding: 40px 0; } }
+
+body .page-section--no-pad {
+  padding: 0; }
+
+/*	end Page sections (layout & spacing)
+********************/
+/*	 Page sections - colour theming
+********************/
+.section-col--white,
+.section-col--white .bg-primary,
+.page-section--col-white,
+.page-section--col-white .bg-primary {
+  background-color: #fff; }
+
+.section-col--light-grey,
+.section-col--light-grey .bg-primary,
+.page-section--col-light-grey,
+.page-section--col-light-grey .bg-primary {
+  background-color: #f2f2f2; }
+
+.section-col--grey,
+.section-col--grey .bg-primary,
+.page-section--col-grey,
+.page-section--col-grey .bg-primary {
+  background-color: #968c6d; }
+
+.section-col--black70,
+.section-col--black70 .bg-primary,
+.page-section--col-black70,
+.page-section--col-black70 .bg-primary {
+  background-color: #6d6e71; }
+
+/* Create section colours where colour class is applied to element */
+.section-col--orange,
+.section-col--orange .bg-primary,
+.page-section--col-orange,
+.page-section--col-orange .bg-primary {
+  background-color: #d04a02; }
+
+.section-col--red,
+.section-col--red .bg-primary,
+.page-section--col-red,
+.page-section--col-red .bg-primary {
+  background-color: #e0301e; }
+
+.section-col--burgundy,
+.section-col--burgundy .bg-primary,
+.page-section--col-burgundy,
+.page-section--col-burgundy .bg-primary {
+  background-color: #a32020; }
+
+.section-col--maroon,
+.section-col--maroon .bg-primary,
+.page-section--col-maroon,
+.page-section--col-maroon .bg-primary {
+  background-color: #602320; }
+
+.section-col--rose,
+.section-col--rose .bg-primary,
+.page-section--col-rose,
+.page-section--col-rose .bg-primary {
+  background-color: #d93954; }
+
+/*	end Page sections - colour theming
+********************/

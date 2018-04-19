@@ -1,0 +1,46 @@
+/*	Title Header component
+********************/
+.title-header {
+  padding: 0; }
+  .title-header .title-header__text-strip {
+    background: #e0301e;
+    /*	apply page primary colour as a background to this component. default is red #e0301e*/
+    padding: 40px 0; }
+  .title-header .title-header__main-heading, .title-header .title-header__sub-heading {
+    color: #fff; }
+  .title-header .title-header__main-heading {
+    margin-top: 0; }
+  .title-header .title-header__sub-heading {
+    margin-top: 0;
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .title-header {
+      padding: 230px 0 0; } }
+  @media (max-width: 767px) {
+    .title-header .title-header__sub-heading {
+      font-size: 1.429rem;
+      /*	override global font styling and make sub-heading smaller on mobile	*/ } }
+
+/*	end Stat bar component
+********************/
+/*	Title header with languages component
+********************/
+.title-header--languages .title-header--languages__list {
+  padding: 0;
+  float: right;
+  list-style: none; }
+  .title-header--languages .title-header--languages__list a {
+    color: #fff;
+    text-decoration: underline; }
+    .title-header--languages .title-header--languages__list a:hover, .title-header--languages .title-header--languages__list a:focus {
+      color: #fff; }
+  @media (max-width: 768px) {
+    .title-header--languages .title-header--languages__list {
+      float: none; } }
+  @media (max-width: 768px) {
+    .title-header--languages .title-header--languages__list li {
+      display: inline;
+      margin-right: 10px; } }
+
+/*	End Title header with languages component
+********************/

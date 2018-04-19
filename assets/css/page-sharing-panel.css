@@ -1,0 +1,79 @@
+.page-sharing {
+  position: relative; }
+  .page-sharing .page-sharing__img-wrapper {
+    position: relative;
+    display: inline-block; }
+  .page-sharing .page-sharing__share-options .page-sharing__share-btns {
+    display: inline-block;
+    list-style: none;
+    white-space: nowrap; }
+    .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn {
+      display: inline-block;
+      margin-right: 4px; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-indent: -9999px;
+        border-radius: 50%; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--facebook {
+          background-image: url(../images/social_icons/facebook-circle.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/facebook-circle.svg);
+          background-size: 18px 18px;
+          background-color: #305891; }
+          a:hover .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--facebook, a:focus .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--facebook {
+            background-color: #294b7b; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--twitter {
+          background-image: url(../images/social_icons/twitter.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/twitter.svg);
+          background-color: #05aced;
+          background-size: 30px 30px; }
+          a:hover .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--twitter, a:focus .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--twitter {
+            background-color: #0492c9; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--linkedin {
+          background-image: url(../images/social_icons/linkedin-circle.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/linkedin-circle.svg);
+          background-size: 18px 18px;
+          background-color: #007cb9; }
+          a:hover .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--linkedin, a:focus .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--linkedin {
+            background-color: #00699d; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--googleplus {
+          background-image: url(../images/social_icons/googleplus.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/googleplus.svg);
+          background-size: 34px 34px;
+          background-color: #fff; }
+          a:hover .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--googleplus, a:focus .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--googleplus {
+            background-color: #ba3e2d; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--googleplus-alt {
+          background-image: url(../images/social_icons/googleplus-alt.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/googleplus-alt.svg);
+          background-size: 34px 34px;
+          background-color: #dc4e41; }
+        .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--pinterest {
+          background-image: url(../images/social_icons/pinterest.png);
+          /* PNG Fallback */
+          background-image: url(../images/social_icons/pinterest.svg);
+          background-size: 25px 25px;
+          background-color: #bd081c; }
+          a:hover .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--pinterest, a:focus .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn .page-sharing__share-icon--pinterest {
+            background-color: #a10718; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--facebook, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--facebook {
+        background-color: #294b7b; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--twitter, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--twitter {
+        background-color: #0492c9; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--linkedin, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--linkedin {
+        background-color: #00699d; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--googleplus, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--googleplus {
+        background-color: #ba3e2d; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--googleplus-alt, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--googleplus-alt {
+        background-color: #a10718; }
+      .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:hover .page-sharing__share-icon--pinterest, .page-sharing .page-sharing__share-options .page-sharing__share-btns .page-sharing__share-btn:focus .page-sharing__share-icon--pinterest {
+        background-color: #a10718; }

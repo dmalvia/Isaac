@@ -1,0 +1,26 @@
+.link-list h2 {
+  margin: 0; }
+
+.tough-question {
+  border-top: 1px solid #fff;
+  padding: 15px 0 20px;
+  width: 100%;
+  font-family: Georgia,sans-serif; }
+
+.tough-question:before {
+  color: #fff;
+  content: '?';
+  line-height: 1.5em;
+  font-size: 1.142rem;
+  float: left; }
+
+.tough-question p {
+  margin: 0;
+  padding: 0 20px; }
+
+.bg-red-base {
+  background-color: #e0301e; }
+
+.link-list {
+  color: #fff;
+  padding: 40px 0; }

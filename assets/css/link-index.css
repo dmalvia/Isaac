@@ -1,0 +1,87 @@
+/* BEGIN Link Index component */
+.link-index {
+  padding: 40px 0 10px;
+  /* There is 30px spacing between Link groups within a hierarchy  */ }
+  @media (max-width: 767px) {
+    .link-index.link-index--no-hierarchy {
+      padding: 40px 0 25px; }
+      .link-index.link-index--no-hierarchy .link-index__group {
+        padding-bottom: 0; } }
+  @media (min-width: 768px) {
+    .link-index {
+      padding: 80px 0 50px; } }
+  .link-index.link-index--no-pad {
+    padding: 0;
+    /*	modifier for component to remove padding	*/ }
+  .link-index .link-index__heading {
+    margin: 0 0 50px; }
+  .link-index .link-index__group {
+    padding-bottom: 15px; }
+    .link-index .link-index__group .link-index__top-level-text {
+      /* Top level heading - no hyperlink */
+      font-weight: 700;
+      font-style: italic;
+      display: block;
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-size: 1.429rem;
+      font-family: Georgia, serif;
+      line-height: 1.5em; }
+    .link-index .link-index__group .link-index__top-level-link {
+      /* Top level heading - with hyperlink */
+      font-weight: 700;
+      font-style: normal; }
+    .link-index .link-index__group .link-index__link {
+      display: block;
+      margin: 0;
+      padding: 0 0 15px;
+      text-decoration: none; }
+      .link-index .link-index__group .link-index__link.link-index__link--top-level {
+        padding: 0 0 20px; }
+      .link-index .link-index__group .link-index__link .link-index__link-text {
+        border-bottom: 1px solid #ccc;
+        color: #404041;
+        cursor: pointer;
+        display: inline;
+        margin-top: 0;
+        padding-bottom: 1px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        font-size: 16px;
+        font-size: 1.186rem;
+        font-family: Georgia, serif;
+        line-height: 1.5em;
+        word-wrap: break-word; }
+        .link-index .link-index__group .link-index__link .link-index__link-text.link-index__top-level-link {
+          font-size: 20px;
+          font-size: 1.429rem;
+          padding-bottom: 2px; }
+        @media (min-width: 768px) {
+          .link-index .link-index__group .link-index__link .link-index__link-text {
+            padding-bottom: 3px; }
+            .link-index .link-index__group .link-index__link .link-index__link-text.link-index__top-level-link {
+              padding-bottom: 4px; } }
+      .link-index .link-index__group .link-index__link:hover .link-index__link-text, .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+        padding-bottom: 1px;
+        text-decoration: none; }
+        @media (min-width: 768px) {
+          .link-index .link-index__group .link-index__link:hover .link-index__link-text, .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+            padding-bottom: 2px; }
+            .link-index .link-index__group .link-index__link:hover .link-index__link-text.link-index__top-level-link, .link-index .link-index__group .link-index__link:focus .link-index__link-text.link-index__top-level-link {
+              padding-bottom: 3px; } }
+        .page-primary-col--orange .link-index .link-index__group .link-index__link:hover .link-index__link-text, .page-primary-col--orange .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+          border-bottom: 2px solid #d04a02; }
+        .page-primary-col--red .link-index .link-index__group .link-index__link:hover .link-index__link-text, .page-primary-col--red .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+          border-bottom: 2px solid #e0301e; }
+        .page-primary-col--burgundy .link-index .link-index__group .link-index__link:hover .link-index__link-text, .page-primary-col--burgundy .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+          border-bottom: 2px solid #a32020; }
+        .page-primary-col--maroon .link-index .link-index__group .link-index__link:hover .link-index__link-text, .page-primary-col--maroon .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+          border-bottom: 2px solid #602320; }
+        .page-primary-col--rose .link-index .link-index__group .link-index__link:hover .link-index__link-text, .page-primary-col--rose .link-index .link-index__group .link-index__link:focus .link-index__link-text {
+          border-bottom: 2px solid #d93954; }
+    .link-index .link-index__group .link-index__link-text--top-level {
+      /* Top level heading without hyperlink - bold but not italic */
+      font-style: italic;
+      font-weight: 400; }
+
+/* END Link Index component */

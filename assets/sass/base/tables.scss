@@ -1,0 +1,141 @@
+/* BEGIN tables styling */
+
+// Style base tables (with .table class) and Table component
+// Built without Bootstrap dependency
+
+// Reset Browser styles
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+th {
+    text-align: left;
+}
+
+// Style tables
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+    .page-dir--rtl & {
+        direction: rtl;
+    }
+}
+
+.table table, // DPE Table component
+table.table, // Dev portal code
+.table td,
+.table tr,
+.table th {
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1.142rem;
+    color: #404041;
+}
+
+// Table head style
+.table thead > tr > th,
+.table tbody > tr > th{
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-size: 1.286rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 15px 10px;
+    vertical-align: top;
+
+    .page-dir--rtl & {
+        text-align: right;
+    }
+}
+
+.table th p
+
+// First row of tbody with th, or thead
+.table thead > tr > th,
+.table tbody > tr:first-of-type > th {
+    border-bottom: 2px solid #ccc;
+}
+
+// td style
+.table tbody > tr > td {
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5;
+    padding: 15px 10px;
+    vertical-align: top;
+
+    .page-dir--rtl & {
+        text-align: right;
+    }
+}
+
+// Top row of tables (hidden if thead present)
+.table tbody > tr:first-of-type > td {
+    border-top: 1px solid #ccc;
+}
+
+// Nested table
+.table .table {
+    background-color: #ffffff;
+}
+
+// Striped table
+.table.striped tbody > tr:nth-of-type(even) {
+    .page-section--col-white & {
+        background-color: #f2f2f2;
+    }
+    .page-section--col-light-grey & {
+        background-color: #fff;
+    }
+}
+
+.table td > p,
+.table th > p {
+    margin: 0 0 10px 0;
+}
+
+.table td > p:only-child,
+.table td > p:last-child,
+.table th > p:only-child,
+.table th > p:last-child {
+    margin: 0;
+}
+
+.table th p {
+    font-size: 18px;
+    font-size: 1.286rem;
+    font-weight: bold;
+}
+
+// Reset Bootstrap styles
+.table caption + thead > tr:first-child > th,
+.table colgroup + thead > tr:first-child > th,
+.table thead:first-child > tr:first-child > th,
+.table caption + thead > tr:first-child > td,
+.table colgroup + thead > tr:first-child > td,
+.table thead:first-child > tr:first-child > td,
+.table thead > tr > th,
+.table tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+    border-top: 0;
+}
+
+.table.striped th {
+    border-color: #ccc;
+    border-style: solid;
+}
+
+/* END tables styling */

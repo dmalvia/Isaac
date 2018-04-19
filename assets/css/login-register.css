@@ -1,0 +1,84 @@
+/*	Login register form component
+********************/
+.login-register {
+  padding: 10px 15px 30px; }
+  .login-register .form-group {
+    padding-bottom: 10px; }
+  .login-register .btn {
+    padding: 15px 40px; }
+    .login-register .btn.btn--register {
+      margin: 15px 0 25px; }
+  .login-register input[type=text], .login-register input[type=email], .login-register input[type=password] {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #6d6e71; }
+  .login-register .login-register--links a:hover {
+    color: #e0301e; }
+  .login-register .login-register--social {
+    margin-bottom: 25px; }
+    .login-register .login-register--social .login-register--social__text {
+      margin-right: 15px;
+      line-height: 36px;
+      vertical-align: middle;
+      display: block;
+      float: left; }
+    .login-register .login-register--social .login-register--social__icon {
+      text-decoration: none; }
+
+.login-register::-webkit-input-placeholder {
+  color: #6d6e71; }
+
+.login-register:-ms-input-placeholder {
+  color: #6d6e71; }
+
+.login-register::-moz-placeholder {
+  color: #6d6e71;
+  opacity: 1; }
+
+.login-register:-moz-placeholder {
+  color: #6d6e71;
+  opacity: 1; }
+
+/*	end Login register form component
+********************/
+/*	Social PWC icons - based on SVG */
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin: 0; }
+  .social-icon.social-icon--facebook {
+    background: #305891; }
+    .social-icon.social-icon--facebook:hover {
+      background: #294b7b; }
+  .social-icon.social-icon--twitter {
+    background: #05aced; }
+    .social-icon.social-icon--twitter:hover {
+      background: #0492c9; }
+  .social-icon.social-icon--linkedin {
+    background: #007cb9; }
+    .social-icon.social-icon--linkedin:hover {
+      background: #00699d; }
+  .social-icon.social-icon--googleplus {
+    background: #db4935; }
+    .social-icon.social-icon--googleplus:hover {
+      background: #ba3e2d; }
+  .social-icon.social-icon--googleplus-w {
+    background: #fff; }
+    .social-icon.social-icon--googleplus-w:hover {
+      background: #d9d9d9; }
+  .social-icon.social-icon--youtube {
+    background: #e14e42; }
+    .social-icon.social-icon--youtube:hover {
+      background: #bf4238; }
+  .social-icon.social-icon--youtube-w {
+    background: #fff; }
+    .social-icon.social-icon--youtube-w:hover {
+      background: #d9d9d9; }
+  .social-icon.social-icon--has-pad {
+    padding: 7px; }
+
+/*	end Social PWC icons - based on SVG */

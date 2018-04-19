@@ -1,0 +1,273 @@
+@import "../coloursMap";
+/*	Typography (generic / common)
+*
+*
+*	Font sizes, weights and style should ideally be defined here
+*
+*
+********************/
+
+html  {
+	color: $black;
+	font: 0.875em/1.5em arial, helvetica, sans-serif; /*	base font-size = 14px	*/
+	 -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+	letter-spacing: 0;
+	/*font-size: 14px;*/
+	/*font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;*/
+}
+
+body {
+	color: $black;
+}
+
+/*	tags	*/
+
+p {
+	/*font-size: 14px;*/
+	font-size: 1.142rem; /* 16px on desktop	*/
+    line-height:1.5em;
+	margin:0 0 10px;
+}
+
+p small {
+font-size: 85%;	
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6  {
+	font-family:georgia, serif;
+	font-style:italic;
+	font-weight:normal;
+    color:inherit;
+}
+
+
+h1,.h1 {
+    font-size:38px;
+    font-size: 2.714rem;
+	font-weight:bold;
+	line-height: 1.3em;
+    margin: 20px 0 10px;
+}
+h2,.h2 {
+	font-size:35px;
+	font-size: 2.5rem;
+	line-height: 1.3em;
+	margin: 20px 0 10px;
+}
+h3,.h3 {
+	font-size:28px;
+	font-size: 2.0rem;
+	line-height: 1.3em;
+	margin: 20px 0 10px;
+}
+h4,.h4 {
+	font-size:24px;
+	font-size: 1.716rem;
+	line-height: 1.5em;
+	margin: 10px 0 10px;
+}
+h5,.h5 {
+	font-size:20px;
+	font-size: 1.429rem;
+	line-height: 1.5em;
+	margin: 10px 0 10px;
+}
+h6, .h6 {
+	font-size:18px;
+	font-size: 1.286rem;
+	line-height: 1.5em;
+	margin: 10px 0 10px;
+}
+
+/*.container h1:first-of-type, .container h2:first-of-type, .container h3:first-of-type {
+    margin-top: 0;
+}*/
+
+/*	todo: resinstate the following in a way that works in DPE i.e. allows for 2 / 3 columns of text */
+/*
+.container h1:first-of-type,
+.container h2:first-of-type,
+.container h3:first-of-type {
+	margin-top: 0;
+}
+*/
+
+/* 	
+*	Remove the margin if an h2 or h3 is the first element inside a text component. 
+*	Assumes no other components h2 / h3's aren't embedded within other HTML elements inside a text component??	
+*/
+/*
+.text-component h2:first-child:first-of-type,
+.text-component h3:first-child:first-of-type 
+*/
+.text-component h2:first-child,
+.text-component h3:first-child {
+	margin-top: 0;
+}
+
+small {
+font-size: 85%;
+}
+
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
+h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small,
+.h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small,
+.h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small  {
+font-size: 85%;
+display: block;
+}
+
+strong {
+
+}
+
+em {
+/*	do not globally make all <em>'s italic	*/
+}
+
+i {
+font-style: italic;
+}
+
+p em, li em, td em {
+font-style: italic;
+}
+
+a p, a h1, a h2, a h3, a h4, a h5, a h6 {
+color: $black;
+}
+
+ul {
+    // list-style-type:disc;
+}
+
+ol {
+    list-style-type:decimal;
+}
+ul, ol {
+    margin: 0 0 8px;
+}
+ul li, ol li {
+    margin-bottom:8px;
+}
+
+strong, b {
+	font-weight:bold;
+}
+
+sup {
+	position: relative; top: -0.5em; font-size: 80%; /*	revisit?	where is this used?*/
+}
+
+/*	end tags	*/
+
+/*	classes 	*/
+.serif, .sub-heading, .lead {
+	font-family:georgia, serif;
+	font-style:italic;
+	font-weight:normal;
+    color:inherit;
+}
+
+.sans {
+	font-family:arial, sans-serif;
+}
+
+.regular {
+	font-style: normal;
+}
+
+.sub-heading {
+	/*same as h4*/
+	font-size:24px;
+	font-size: 1.714rem;
+	line-height: 1.5em;
+	margin: 10px 0 10px;
+}
+
+/*p.sub-heading {
+line-height: 1.2;	
+}*/
+
+.lead {
+	font-size:18px;
+	font-size: 1.286rem;
+	line-height: 1.5em;
+	margin: 10px 0 10px;
+}
+
+.small-copy{
+	/*font-size:14px;*/
+	font-size: 1rem;
+}
+
+/*	todo: move this to a better okace in the code?*/
+
+.text-component p > a,
+.text-component li > a,
+.section.text p>a,.section.text li>a,.section.table table a,.section.table tr a,.section.table td a,.section.table th a /* Added additional selectors for DPE */ {
+border-bottom: 1px solid $black;
+color: $black;
+font-size: inherit;
+text-decoration: none;
+}
+
+.text-component p > a:hover, .text-component li > a:hover, .text-component p > a:focus, .text-component li > a:focus,
+.section.text p>a:hover,.section.text li>a:hover,.section.table table a:hover,.section.table tr a:hover,.section.table td a:hover,.section.table th a:hover,
+.section.text p>a:focus,.section.text li>a:focus,.section.table table a:focus,.section.table tr a:focus,.section.table td a:focus,.section.table th a:focus /* Added additional selectors for DPE */ {
+border-bottom: 2px solid $red;
+color: $red;
+text-decoration: none;
+}
+
+a, a:hover, a:focus {
+	color:inherit;
+}
+
+
+
+
+a .serif, 
+a.serif,
+.serif a  {
+font-style: normal; 
+}
+
+
+
+.center {
+	text-align:center;
+}
+
+.text-lighter  {
+/*/color: #6e6d72;*/
+color: $black70;
+}
+
+/*	end classes	*/
+
+/*	end Typography
+********************/
+
+
+@media (max-width: 767px) {
+	/*	Globally scale down font-size. Specific sizes can be applied to specific elements via component level styling. */
+	html {
+		font-size: 0.75em; /*	base font-size = 12px	*/
+		
+	}
+
+	/* keep certain elements like <p>, basic <li> and <dd> as 14px*/
+	p, li , dt, dd {
+		font-size: 1.167rem;
+	}
+
+	.small-copy{
+	/*font-size:14px;*/
+	/*font-size: 0.91rem;*/
+	}
+}

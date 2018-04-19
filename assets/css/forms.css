@@ -1,0 +1,38 @@
+/*  Form elements
+*
+*
+*   add notes here
+*
+*
+********************/
+select {
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #f3f3f3;
+  border-radius: 0;
+  font-weight: bold;
+  color: #6e6d72;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/select_arrow.svg) no-repeat #fff 95% 50%;
+  background-size: 15px 15px; }
+
+.drop-button {
+  /* duplicate styles from select as this is very generic   */
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #f3f3f3;
+  font-weight: bold;
+  color: #6e6d72;
+  -webkit-appearance: none;
+  background: url(../images/select_arrow.svg) no-repeat #fff 95% 50%;
+  background-size: 15px 15px; }
+
+.drop-button--brand-color1 {
+  /* orange   */
+  background-color: #dc6900;
+  color: #fff; }
+
+select::-ms-expand {
+  display: none; }
+
+select:focus {
+  outline: none; }

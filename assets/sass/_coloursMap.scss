@@ -1,0 +1,77 @@
+﻿//Map of colour values / labels available for sections:
+$sectionColours: (
+ orange: #d04a02,
+ red: #e0301e,
+ burgundy: #a32020,
+ maroon: #602320,
+ rose: #d93954
+);
+//Map of colour values / labels available for components:
+$componentColours: (
+ orange: #d04a02,
+ red: #e0301e,
+ burgundy: #a32020,
+ maroon: #602320,
+ rose: #d93954
+);
+
+$componentStates: (
+ orange: #d04a02,
+ orangeHover: #b13f02,
+ orangeActive: #a63b02,
+ red: #e0301e,
+ redHover: #be291a,
+ redActive: #b32618,
+ burgundy: #a32020,
+ burgundyHover: #8b1b1b,
+ burgundyActive: #821a1a,
+ maroon: #602320,
+ maroonHover: #521e1b,
+ maroonActive: #4d1c1a,
+ rose: #d93954,
+ roseHover: #b93147,
+ roseActive: #ae2e43,
+ grey: #736b53,
+ greyHover: #625b47,
+ greyActive: #5c5642
+);
+
+//Brand colour values
+$orange: #d04a02;
+$red: #e0301e;
+$burgundy: #a32020;
+$maroon: #602320;
+$rose: #d93954;
+$grey: #736b53;
+$black70: #6d6e71;
+$yellow: #ffb600;
+
+
+$redShade15: #be291a;
+$redShade20: #b32618;
+
+$orangeShade15: #b13f02;
+$orangeShade20: #a63b02;
+
+$roseShade15: #b93147;
+$roseShade20: #ae2e43;
+
+$burgundyShade15: #8b1b1b;
+$burgundyShade20: #821a1a;
+
+$maroonShade15: #521e1b;
+$maroonShade20: #4d1c1a;
+
+$greyShade15: #625b47;
+$greyShade20: #5c5642;
+
+$pagePrimary: #e0301e;
+$pageSecondary: #a32020;
+$pageTertiary: #602320;
+
+//General UI colours
+$white: #ffffff;
+$w: $white;
+$black: #404041;
+$lightgrey: #f2f2f2;
+$greyKeyline: #cccccc;

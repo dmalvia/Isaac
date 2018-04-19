@@ -1,0 +1,14 @@
+﻿/*	base SASS file */
+@import "reset";
+@import "utilities";
+@import "grid12";
+@import "utilities";
+@import "typography-latest";
+@import "buttons";
+@import "forms";
+@import "tables";
+@import "pageSections"; //include layout styling for pages sections (not available in DPE)
+@import "../components/section__colour-theming";  //include partial contain DPE section colour theming styling
+@import "../components/common";
+
+/*	test typography-latest*/

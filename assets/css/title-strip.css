@@ -1,0 +1,75 @@
+/* Title component related */
+.title-strip {
+  background: #e0301e;
+  color: #fff;
+  font-family: Georgia, serif;
+  /* Loop to create colour variations */ }
+  .page-primary-col--orange .title-strip {
+    background: #d04a02; }
+  .page-primary-col--red .title-strip {
+    background: #e0301e; }
+  .page-primary-col--burgundy .title-strip {
+    background: #a32020; }
+  .page-primary-col--maroon .title-strip {
+    background: #602320; }
+  .page-primary-col--rose .title-strip {
+    background: #d93954; }
+  .title-strip .title-strip__wrapper {
+    padding: 30px 0; }
+  .title-strip .title-strip__heading {
+    margin: 0; }
+  .title-strip .title-strip__sub-heading {
+    margin: 5px 0 0;
+    font-style: italic; }
+  .title-strip .title-strip__info {
+    margin-top: 10px; }
+    .title-strip .title-strip__info .title-strip__author {
+      margin-right: 10px; }
+    .title-strip .title-strip__info .title-strip__author-title {
+      font-size: 1rem;
+      font-style: italic;
+      margin-right: 10px; }
+    .title-strip .title-strip__info .title-strip__date {
+      font-size: 1rem;
+      font-style: italic; }
+      @media (max-width: 600px) {
+        .title-strip .title-strip__info .title-strip__date {
+          display: block;
+          margin-top: 5px; } }
+    .title-strip .title-strip__info .title-strip__date.title-strip__date--with-author:before {
+      /* Apply ".title-strip__date--with-author" to ".title-strip__date" when options to display author AND date are selected. This adds the vertical bar */
+      content: '';
+      margin: 0 15px 0 5px;
+      width: 1px;
+      border-left: 1px solid #fff;
+      height: 100%; }
+      @media (max-width: 600px) {
+        .title-strip .title-strip__info .title-strip__date.title-strip__date--with-author:before {
+          display: none; } }
+  .title-strip .title-strip__language-list {
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    padding-bottom: 4px; }
+    @media (max-width: 767px) {
+      .title-strip .title-strip__language-list {
+        float: none;
+        margin-top: 10px;
+        padding-bottom: 2px; } }
+    .title-strip .title-strip__language-list .title-strip__language-link {
+      margin-bottom: 15px; }
+      .title-strip .title-strip__language-list .title-strip__language-link:last-of-type {
+        margin-bottom: 0; }
+      @media (max-width: 767px) {
+        .title-strip .title-strip__language-list .title-strip__language-link {
+          display: inline;
+          margin-bottom: 0;
+          margin-right: 15px; } }
+  .title-strip .lg-text-link {
+    font-family: Georgia, serif;
+    font-size: 1.142rem;
+    line-height: 1.3em;
+    /* CSS below ensures there are no dependancies on "page-section--col--dark" being applied to the section */
+    color: #fff; }
+    .title-strip .lg-text-link:hover, .title-strip .lg-text-link:focus {
+      border-bottom: 2px solid white; }

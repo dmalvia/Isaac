@@ -1,0 +1,209 @@
+/*  PwC lists
+********************/
+.style1 .contentfeature {
+  width: 100%;
+  height: 347px; }
+
+.style1 .background {
+  background: #fceae9;
+  margin: 0px;
+  padding: 10px;
+  height: 290px; }
+
+.style1 ul {
+  float: left;
+  width: 100%;
+  margin-top: 5px; }
+
+.style1 #aColor a {
+  color: #e0301e; }
+
+.style2 h3 {
+  margin-top: 8px;
+  font-size: 1.071rem; }
+
+.style2 h2 {
+  font-size: 1.286rem; }
+
+.style2 a {
+  color: #a32020; }
+
+.style1 .contentfeature {
+  width: 100%;
+  height: 347px; }
+
+.style3 .rhbox li {
+  border-bottom: 0px;
+  padding-bottom: 0px; }
+
+/* Scrollable list component style*/
+.text-list-component h3 {
+  color: #e0301e;
+  font-size: 1.714rem;
+  font-weight: bold;
+  margin: 20px 0; }
+  .page-primary-col--orange .text-list-component h3 {
+    color: #d04a02; }
+  .page-primary-col--red .text-list-component h3 {
+    color: #e0301e; }
+  .page-primary-col--burgundy .text-list-component h3 {
+    color: #a32020; }
+  .page-primary-col--maroon .text-list-component h3 {
+    color: #602320; }
+  .page-primary-col--rose .text-list-component h3 {
+    color: #d93954; }
+
+.text-list-component h3:first-of-type {
+  margin-top: 0; }
+
+.text-list-component h1, .text-list-component h2, .text-list-component h4, .text-list-component h5, .text-list-component h6, .text-list-component .serif {
+  font-family: georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+  color: inherit; }
+
+.text-list-component ul {
+  margin-right: 20px;
+  list-style-type: disc;
+  margin: 0 0 8px;
+  padding: inherit; }
+
+.text-list-component ol {
+  margin-right: 20px;
+  list-style-type: disc;
+  margin: 0 0 8px;
+  padding: inherit; }
+
+.text-list-component ul > li {
+  font-family: georgia, serif;
+  font-style: italic;
+  line-height: 1.5em;
+  list-style: none;
+  padding-left: 20px;
+  position: relative; }
+
+.text-list-component ol > li {
+  font-family: georgia, serif;
+  font-style: italic;
+  line-height: 1.5em;
+  list-style: none;
+  padding-left: 2rem;
+  position: relative; }
+
+.text-list-component ul li {
+  margin-bottom: 20px;
+  font-size: 1.286rem; }
+
+.text-list-component ul li::before {
+  content: '\2022';
+  font-size: 1.214em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  color: #e0301e; }
+  .page-primary-col--orange .text-list-component ul li::before {
+    color: #d04a02; }
+  .page-primary-col--red .text-list-component ul li::before {
+    color: #e0301e; }
+  .page-primary-col--burgundy .text-list-component ul li::before {
+    color: #a32020; }
+  .page-primary-col--maroon .text-list-component ul li::before {
+    color: #602320; }
+  .page-primary-col--rose .text-list-component ul li::before {
+    color: #d93954; }
+
+.text-list-component ol {
+  counter-reset: li;
+  margin-right: 20px; }
+
+.text-list-component ol > li {
+  font-size: 1.286rem;
+  margin-bottom: 20px; }
+
+.text-list-component ol > li::before {
+  content: counter(li) ".";
+  counter-increment: li;
+  font-size: 1em;
+  font-style: normal;
+  left: 0;
+  position: absolute;
+  top: 0;
+  color: #e0301e; }
+  .page-primary-col--orange .text-list-component ol > li::before {
+    color: #d04a02; }
+  .page-primary-col--red .text-list-component ol > li::before {
+    color: #e0301e; }
+  .page-primary-col--burgundy .text-list-component ol > li::before {
+    color: #a32020; }
+  .page-primary-col--maroon .text-list-component ol > li::before {
+    color: #602320; }
+  .page-primary-col--rose .text-list-component ol > li::before {
+    color: #d93954; }
+
+.text-list-component ul > li a,
+.text-list-component ol > li a {
+  border-bottom: 1px solid #ccc;
+  color: #404041;
+  cursor: pointer;
+  display: inline;
+  font-style: normal;
+  margin-top: 0;
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  text-decoration: none; }
+  .text-list-component ul > li a:hover, .text-list-component ul > li a:focus,
+  .text-list-component ol > li a:hover,
+  .text-list-component ol > li a:focus {
+    color: #404041 !important;
+    border-bottom: 2px solid #e0301e;
+    padding-bottom: 1px;
+    text-decoration: none; }
+    .page-primary-col--orange .text-list-component ul > li a:hover, .page-primary-col--orange .text-list-component ul > li a:focus, .page-primary-col--orange
+    .text-list-component ol > li a:hover, .page-primary-col--orange
+    .text-list-component ol > li a:focus {
+      border-bottom-color: #d04a02; }
+    .page-primary-col--red .text-list-component ul > li a:hover, .page-primary-col--red .text-list-component ul > li a:focus, .page-primary-col--red
+    .text-list-component ol > li a:hover, .page-primary-col--red
+    .text-list-component ol > li a:focus {
+      border-bottom-color: #e0301e; }
+    .page-primary-col--burgundy .text-list-component ul > li a:hover, .page-primary-col--burgundy .text-list-component ul > li a:focus, .page-primary-col--burgundy
+    .text-list-component ol > li a:hover, .page-primary-col--burgundy
+    .text-list-component ol > li a:focus {
+      border-bottom-color: #a32020; }
+    .page-primary-col--maroon .text-list-component ul > li a:hover, .page-primary-col--maroon .text-list-component ul > li a:focus, .page-primary-col--maroon
+    .text-list-component ol > li a:hover, .page-primary-col--maroon
+    .text-list-component ol > li a:focus {
+      border-bottom-color: #602320; }
+    .page-primary-col--rose .text-list-component ul > li a:hover, .page-primary-col--rose .text-list-component ul > li a:focus, .page-primary-col--rose
+    .text-list-component ol > li a:hover, .page-primary-col--rose
+    .text-list-component ol > li a:focus {
+      border-bottom-color: #d93954; }
+
+.text-list__more-wrapper {
+  margin-bottom: 20px; }
+
+.text-list-controllers .lg-text-link {
+  display: inline-block;
+  margin-right: 30px; }
+
+.text-list-controllers .lg-text-link a,
+.text-list-controllers .lg-text-link a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+.text-list-controllers .btn a:hover {
+  text-decoration: none; }
+
+.text-list-controllers .btn--prev:before {
+  content: '< ';
+  font-family: georgia, serif;
+  font-weight: normal; }
+
+.text-list-controllers .btn--next:after {
+  content: ' >';
+  font-family: georgia, serif;
+  font-weight: normal; }
+
+/*  end PwC lists
+********************/

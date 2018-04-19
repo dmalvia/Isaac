@@ -1,0 +1,191 @@
+.contact-detail {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .contact-detail .contact-detail__content {
+    padding-bottom: 40px; }
+  .contact-detail .contact-detail__text-link {
+    display: inline;
+    color: #404041;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out; }
+    .contact-detail .contact-detail__text-link:hover, .contact-detail .contact-detail__text-link:focus {
+      text-decoration: none;
+      padding-bottom: 3px;
+      color: #404041;
+      border-bottom: 2px solid #e0301e; }
+      .page-primary-col--orange .contact-detail .contact-detail__text-link:hover, .page-primary-col--orange .contact-detail .contact-detail__text-link:focus {
+        border-bottom: 2px solid #d04a02; }
+      .page-primary-col--red .contact-detail .contact-detail__text-link:hover, .page-primary-col--red .contact-detail .contact-detail__text-link:focus {
+        border-bottom: 2px solid #e0301e; }
+      .page-primary-col--burgundy .contact-detail .contact-detail__text-link:hover, .page-primary-col--burgundy .contact-detail .contact-detail__text-link:focus {
+        border-bottom: 2px solid #a32020; }
+      .page-primary-col--maroon .contact-detail .contact-detail__text-link:hover, .page-primary-col--maroon .contact-detail .contact-detail__text-link:focus {
+        border-bottom: 2px solid #602320; }
+      .page-primary-col--rose .contact-detail .contact-detail__text-link:hover, .page-primary-col--rose .contact-detail .contact-detail__text-link:focus {
+        border-bottom: 2px solid #d93954; }
+    @media (max-width: 768px) {
+      .contact-detail .contact-detail__text-link {
+        padding-bottom: 2px; }
+        .contact-detail .contact-detail__text-link:hover, .contact-detail .contact-detail__text-link:focus {
+          padding-bottom: 1px; } }
+  .contact-detail .contact-detail__bio h1:first-of-type {
+    margin-top: 0; }
+  .contact-detail .contact-detail__bio .lead:first-of-type {
+    margin-bottom: 20px; }
+  .contact-detail .contact-detail__panel {
+    margin-right: 0;
+    margin-bottom: 40px; }
+    @media (max-width: 768px) {
+      .contact-detail .contact-detail__panel {
+        margin-left: 0; } }
+    .contact-detail .contact-detail__panel li {
+      line-height: 1.3em;
+      /*  increase line-height in case tag wraps to multiple lines */
+      list-style: none; }
+    .contact-detail .contact-detail__panel.contact-detail__contact-info {
+      border-top: 4px solid #e0301e; }
+      .page-primary-col--orange .contact-detail .contact-detail__panel.contact-detail__contact-info {
+        border-top: 4px solid #d04a02; }
+      .page-primary-col--red .contact-detail .contact-detail__panel.contact-detail__contact-info {
+        border-top: 4px solid #e0301e; }
+      .page-primary-col--burgundy .contact-detail .contact-detail__panel.contact-detail__contact-info {
+        border-top: 4px solid #a32020; }
+      .page-primary-col--maroon .contact-detail .contact-detail__panel.contact-detail__contact-info {
+        border-top: 4px solid #602320; }
+      .page-primary-col--rose .contact-detail .contact-detail__panel.contact-detail__contact-info {
+        border-top: 4px solid #d93954; }
+      .contact-detail .contact-detail__panel.contact-detail__contact-info .contact-detail__contact-info__text {
+        padding-left: 0;
+        padding-right: 0; }
+      .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+        color: #e0301e; }
+        .page-primary-col--orange .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+          color: #d04a02; }
+        .page-primary-col--red .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+          color: #e0301e; }
+        .page-primary-col--burgundy .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+          color: #a32020; }
+        .page-primary-col--maroon .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+          color: #602320; }
+        .page-primary-col--rose .contact-detail .contact-detail__panel.contact-detail__contact-info h2 {
+          color: #d93954; }
+      .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social {
+        margin: 15px 0 0; }
+        .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link {
+          display: inline-block; }
+          .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link .follow-icon {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 0; }
+            .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link .follow-icon--twitter {
+              background: #05aced; }
+            .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link .follow-icon--linkedin {
+              background: #007cb9; }
+            .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link .follow-icon--googleplus {
+              background: #fff;
+              border: 1px solid #ccc; }
+            .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link .follow-icon--has-pad {
+              padding: 7px; }
+          .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link:hover .follow-icon--twitter {
+            background: #0492c9; }
+          .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link:hover .follow-icon--linkedin {
+            background: #00699d; }
+          .contact-detail .contact-detail__panel.contact-detail__contact-info .contact__social .contact__social-link:hover .follow-icon--googleplus {
+            background: #adadad; }
+    .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+      border-top: 4px solid #a32020; }
+      .page-secondary-col--orange .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+        border-top: 4px solid #d04a02; }
+      .page-secondary-col--red .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+        border-top: 4px solid #e0301e; }
+      .page-secondary-col--burgundy .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+        border-top: 4px solid #a32020; }
+      .page-secondary-col--maroon .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+        border-top: 4px solid #602320; }
+      .page-secondary-col--rose .contact-detail .contact-detail__panel.contact-detail__contact-tags {
+        border-top: 4px solid #d93954; }
+      .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+        color: #a32020; }
+        .page-secondary-col--orange .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+          color: #d04a02; }
+        .page-secondary-col--red .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+          color: #e0301e; }
+        .page-secondary-col--burgundy .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+          color: #a32020; }
+        .page-secondary-col--maroon .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+          color: #602320; }
+        .page-secondary-col--rose .contact-detail .contact-detail__panel.contact-detail__contact-tags h2 {
+          color: #d93954; }
+      @media (max-width: 768px) {
+        .contact-detail .contact-detail__panel.contact-detail__contact-tags .contact-detail__sub-column {
+          /* Space between column when stacked on mobile devices */
+          margin-bottom: 15px;
+          padding-left: 0; } }
+  @media (min-width: 992px) {
+    .contact-detail {
+      padding-top: 110px;
+      padding-bottom: 100px; }
+    .contact-detail .contact-detail__content {
+      padding-bottom: 0; } }
+  @media (min-width: 768px) {
+    .contact-detail .contact-detail__sub-column:nth-child(odd) {
+      padding-left: 0;
+      clear: left; }
+    .contact-detail .contact-detail__sub-column:nth-child(even) {
+      padding-right: 0; } }
+  .contact-detail .generic-social {
+    padding: 10px 0; }
+    .contact-detail .generic-social .generic-social__social-link {
+      display: inline-block;
+      margin-right: 4px;
+      text-decoration: none; }
+  .contact-detail .sub-comp--horiz-links .sub-comp--horiz-links__link {
+    /* tweak spacing on language selector links in this component */ }
+    @media (min-width: 768px) {
+      .contact-detail .sub-comp--horiz-links .sub-comp--horiz-links__link {
+        margin-right: 15px; } }
+
+/*  by default all blocks are forced to stack   */
+/*.contact-detail {
+     .contact-detail__panel.contact-detail__contact-tags {
+         .contact-detail__sub-column {
+         padding-bottom: 10px;    /* always have some bottom padding on each block 
+         padding-left: 15px;
+         padding-right: 15px;
+         width: 100%;
+             @media( min-width: 992px) {
+                 & {
+                 padding-left: 0;
+                 }
+             }
+         }
+     }
+
+     &.contact-detail--has-js  {
+         .contact-detail__panel.contact-detail__contact-tags {
+             .contact-detail__sub-column {
+                 @media( min-width: 768px) {
+                     & {
+                     padding-bottom: 20px; /*    increase padding when arrange into blocks 
+                     width: 50%; /*  reinstate 50% width: 
+                     } 
+
+                     &.contact-detail__sub-column--right {
+                     padding-right: 0;
+                     }
+                 }
+
+                 @media( min-width: 992px) {
+                     &.contact-detail__sub-column--right {
+                     padding-left: 15px; /* reinstate padding for right hand blocks
+
+                     }
+                 }
+             }
+         }
+
+     }
+}*/

@@ -1,0 +1,104 @@
+/* BEGIN tables styling */
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+th {
+  text-align: left; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px; }
+  .page-dir--rtl .table {
+    direction: rtl; }
+
+.table table,
+table.table,
+.table td,
+.table tr,
+.table th {
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1.142rem;
+  color: #404041; }
+
+.table thead > tr > th,
+.table tbody > tr > th {
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  font-size: 1.286rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 15px 10px;
+  vertical-align: top; }
+  .page-dir--rtl .table thead > tr > th, .page-dir--rtl
+  .table tbody > tr > th {
+    text-align: right; }
+
+.table th p
+.table thead > tr > th,
+.table tbody > tr:first-of-type > th {
+  border-bottom: 2px solid #ccc; }
+
+.table tbody > tr > td {
+  border-bottom: 1px solid #ccc;
+  line-height: 1.5;
+  padding: 15px 10px;
+  vertical-align: top; }
+  .page-dir--rtl .table tbody > tr > td {
+    text-align: right; }
+
+.table tbody > tr:first-of-type > td {
+  border-top: 1px solid #ccc; }
+
+.table .table {
+  background-color: #ffffff; }
+
+.page-section--col-white .table.striped tbody > tr:nth-of-type(even) {
+  background-color: #f2f2f2; }
+
+.page-section--col-light-grey .table.striped tbody > tr:nth-of-type(even) {
+  background-color: #fff; }
+
+.table td > p,
+.table th > p {
+  margin: 0 0 10px 0; }
+
+.table td > p:only-child,
+.table td > p:last-child,
+.table th > p:only-child,
+.table th > p:last-child {
+  margin: 0; }
+
+.table th p {
+  font-size: 18px;
+  font-size: 1.286rem;
+  font-weight: bold; }
+
+.table caption + thead > tr:first-child > th,
+.table colgroup + thead > tr:first-child > th,
+.table thead:first-child > tr:first-child > th,
+.table caption + thead > tr:first-child > td,
+.table colgroup + thead > tr:first-child > td,
+.table thead:first-child > tr:first-child > td,
+.table thead > tr > th,
+.table tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+  border-top: 0; }
+
+.table.striped th {
+  border-color: #ccc;
+  border-style: solid; }
+
+/* END tables styling */

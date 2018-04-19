@@ -1,0 +1,94 @@
+/*	Text lists (typepad?)
+********************/
+.typepadblog ul {
+  margin-right: 20px; }
+
+.typepadblog ul > li,
+.typepadblog ol > li {
+  color: #414141;
+  font-family: georgia, serif;
+  font-style: italic;
+  line-height: 1.5em;
+  list-style: none;
+  padding-left: 20px;
+  position: relative; }
+
+.typepadblog ul > li a,
+.typepadblog ol > li a {
+  color: #6d6e71;
+  font-style: normal;
+  text-decoration: none; }
+
+.typepadblog ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  /*fallback*/
+  font-size: 1.286rem; }
+
+.typepadblog ul li::before {
+  content: '\2022';
+  color: #e1301e;
+  /*	default to red	*/
+  font-size: 1.25em;
+  left: 0;
+  position: absolute;
+  top: 0; }
+
+.typepadblog ul > li a:hover {
+  color: #e1301e; }
+
+.typepadblog ol {
+  counter-reset: li;
+  margin-right: 20px; }
+
+.typepadblog ol > li {
+  font-size: 18px;
+  font-size: 1.286rem;
+  margin-bottom: 20px; }
+
+.typepadblog ol > li::before {
+  content: counter(li) ".";
+  counter-increment: li;
+  color: #e1301e;
+  /*	default to red	*/
+  font-size: 1em;
+  font-style: normal;
+  left: 0;
+  position: absolute;
+  top: 0; }
+
+.typepadblog ol > li a:hover {
+  color: #e1301e; }
+
+.text-list-controllers .btn {
+  display: inline-block;
+  padding: 14px 23px;
+  font: 13px/16px Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #414141;
+  background: #f0f0f0;
+  cursor: pointer;
+  -webkit-transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out;
+  transition: background .2s ease-out; }
+
+.text-list-controllers .btn:hover, .text-list-controllers .btn:focus {
+  color: #fff;
+  background: #eb8c00; }
+
+.text-list-controllers .btn--prev:before {
+  content: '< ';
+  font-family: georgia, serif;
+  font-weight: normal; }
+
+.text-list-controllers .btn--next:after {
+  content: ' >';
+  font-family: georgia, serif;
+  font-weight: normal; }
+
+/* list navigation buttons */
+/* end list navigation buttons */
+/*	end Text lists (typepad?)
+********************/

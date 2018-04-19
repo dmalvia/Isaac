@@ -1,0 +1,223 @@
+@import "../coloursMap";
+
+/*	Page sections (layout & spacing)
+********************/
+
+/*
+These selectors will eventually be removed when colour theming is implemented.
+*/
+.bg-default {background:#fff;}
+.bg-alternative {background:#e7e7e9;}
+.bg-primary {background:#e1301e;color:#fff;} /* bg-default*/
+
+.maxPadding .container {
+	/*padding-top:60px;*/
+    padding-top:40px;
+	padding-bottom:40px;
+}
+
+.regPadding .container {
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.page-section {
+padding: 20px 0;
+}
+
+@media(min-width:768px) {
+	.page-section {
+	padding: 40px 0;
+	}
+}
+
+body .page-section--no-pad {
+padding: 0;
+}
+
+
+/*	end Page sections (layout & spacing)
+********************/
+
+/*	 Page sections - colour theming
+********************/
+
+.section-col--white ,
+.section-col--white .bg-primary,
+.page-section--col-white ,
+.page-section--col-white .bg-primary {
+background-color:#fff;
+}
+.section-col--light-grey ,
+.section-col--light-grey .bg-primary,
+.page-section--col-light-grey ,
+.page-section--col-light-grey .bg-primary  {
+background-color:#f2f2f2 ;
+}
+
+.section-col--grey ,
+.section-col--grey .bg-primary,
+.page-section--col-grey ,
+.page-section--col-grey .bg-primary {
+background-color:#968c6d ;
+}
+
+.section-col--black70 ,
+.section-col--black70 .bg-primary,
+.page-section--col-black70 ,
+.page-section--col-black70 .bg-primary {
+background-color:$black70 ;
+}
+
+///*	
+//*
+//create section colours based on primary / secondary / tertiary page colours
+//*
+//*/
+// @each $label, $color in $componentColours {
+	///* create section backgrounds based on primary colour */
+	// .page-primary-col--#{$label}  {
+	// 	.section-col--primary,
+	// 	.page-section--col-primary {
+	// 	background-color:$color;
+	// 	}
+	// }
+	///* create section backgrounds based on secondary colour */
+	// .page-secondary-col--#{$label}  {
+	// 	.section-col--secondary,
+	// 	.page-section--col-secondary {
+	// 	background-color:$color;
+	// 	}
+	// }
+	///* create section backgrounds based on tertiary colour */
+	// .page-tertiary-col--#{$label}  {
+	// 	.section-col--tertiary,
+	// 	.page-section--col-tertiary {
+	// 	background-color:$color;
+	// 	}
+	// }
+// }
+
+///* Create section colours where colour class is applied to element */
+// @each $label, $color in $sectionColours {
+// 	.section-col--#{$label} ,
+// 	.section-col--#{$label} .bg-primary,
+// 	.page-section--col-#{$label} ,
+// 	.page-section--col-#{$label} .bg-primary {
+// 	background-color:$color;
+// 	}
+// }
+// /*	
+// *
+// create section colours based on primary / secondary / tertiary page colours
+// *
+// */
+// /* create section backgrounds based on primary colour */
+// .page-primary-col--orange .section-col--primary,
+// .page-primary-col--orange .page-section--col-primary {
+//   background-color: #d04a02; }
+
+// /* create section backgrounds based on secondary colour */
+// .page-secondary-col--orange .section-col--secondary,
+// .page-secondary-col--orange .page-section--col-secondary {
+//   background-color: #d04a02; }
+
+// /* create section backgrounds based on tertiary colour */
+// .page-tertiary-col--orange .section-col--tertiary,
+// .page-tertiary-col--orange .page-section--col-tertiary {
+//   background-color: #d04a02; }
+
+// /* create section backgrounds based on primary colour */
+// .page-primary-col--red .section-col--primary,
+// .page-primary-col--red .page-section--col-primary {
+//   background-color: #e0301e; }
+
+// /* create section backgrounds based on secondary colour */
+// .page-secondary-col--red .section-col--secondary,
+// .page-secondary-col--red .page-section--col-secondary {
+//   background-color: #e0301e; }
+
+// /* create section backgrounds based on tertiary colour */
+// .page-tertiary-col--red .section-col--tertiary,
+// .page-tertiary-col--red .page-section--col-tertiary {
+//   background-color: #e0301e; }
+
+// /* create section backgrounds based on primary colour */
+// .page-primary-col--burgundy .section-col--primary,
+// .page-primary-col--burgundy .page-section--col-primary {
+//   background-color: #a32020; }
+
+// /* create section backgrounds based on secondary colour */
+// .page-secondary-col--burgundy .section-col--secondary,
+// .page-secondary-col--burgundy .page-section--col-secondary {
+//   background-color: #a32020; }
+
+// /* create section backgrounds based on tertiary colour */
+// .page-tertiary-col--burgundy .section-col--tertiary,
+// .page-tertiary-col--burgundy .page-section--col-tertiary {
+//   background-color: #a32020; }
+
+// /* create section backgrounds based on primary colour */
+// .page-primary-col--maroon .section-col--primary,
+// .page-primary-col--maroon .page-section--col-primary {
+//   background-color: #602320; }
+
+// /* create section backgrounds based on secondary colour */
+// .page-secondary-col--maroon .section-col--secondary,
+// .page-secondary-col--maroon .page-section--col-secondary {
+//   background-color: #602320; }
+
+// /* create section backgrounds based on tertiary colour */
+// .page-tertiary-col--maroon .section-col--tertiary,
+// .page-tertiary-col--maroon .page-section--col-tertiary {
+//   background-color: #602320; }
+
+// /* create section backgrounds based on primary colour */
+// .page-primary-col--rose .section-col--primary,
+// .page-primary-col--rose .page-section--col-primary {
+//   background-color: #a93954; }
+
+// /* create section backgrounds based on secondary colour */
+// .page-secondary-col--rose .section-col--secondary,
+// .page-secondary-col--rose .page-section--col-secondary {
+//   background-color: #a93954; }
+
+// /* create section backgrounds based on tertiary colour */
+// .page-tertiary-col--rose .section-col--tertiary,
+// .page-tertiary-col--rose .page-section--col-tertiary {
+//   background-color: #a93954; }
+
+/* Create section colours where colour class is applied to element */
+.section-col--orange,
+.section-col--orange .bg-primary,
+.page-section--col-orange,
+.page-section--col-orange .bg-primary {
+  background-color: $orange; }
+
+.section-col--red,
+.section-col--red .bg-primary,
+.page-section--col-red,
+.page-section--col-red .bg-primary {
+  background-color: $red; }
+
+.section-col--burgundy,
+.section-col--burgundy .bg-primary,
+.page-section--col-burgundy,
+.page-section--col-burgundy .bg-primary {
+  background-color: $burgundy; }
+
+.section-col--maroon,
+.section-col--maroon .bg-primary,
+.page-section--col-maroon,
+.page-section--col-maroon .bg-primary {
+  background-color: $maroon; }
+
+.section-col--rose,
+.section-col--rose .bg-primary,
+.page-section--col-rose,
+.page-section--col-rose .bg-primary {
+  background-color: $rose; }
+
+
+/*	end Page sections - colour theming
+********************/

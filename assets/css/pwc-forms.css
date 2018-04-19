@@ -1,0 +1,465 @@
+.pwc-forms {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 550px;
+  line-height: 1rem;
+  /* FILE UPLOAD */ }
+  .pwc-forms .form-heading {
+    color: #e0301e;
+    border-top: 2px solid #e0301e;
+    padding-top: 10px;
+    margin-bottom: 40px; }
+    .page-primary-col--orange .pwc-forms .form-heading {
+      color: #d04a02;
+      border-top: 2px solid #d04a02; }
+    .page-primary-col--red .pwc-forms .form-heading {
+      color: #e0301e;
+      border-top: 2px solid #e0301e; }
+    .page-primary-col--burgundy .pwc-forms .form-heading {
+      color: #a32020;
+      border-top: 2px solid #a32020; }
+    .page-primary-col--maroon .pwc-forms .form-heading {
+      color: #602320;
+      border-top: 2px solid #602320; }
+    .page-primary-col--rose .pwc-forms .form-heading {
+      color: #d93954;
+      border-top: 2px solid #d93954; }
+    .pwc-forms .form-heading.form-heading--alternate {
+      margin-bottom: 10px; }
+  .pwc-forms .pwc-forms__intro {
+    margin-bottom: 40px; }
+  .pwc-forms .pwc-forms__form-meta {
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .pwc-forms .pwc-forms__form-meta {
+        margin-bottom: 40px; } }
+    .pwc-forms .pwc-forms__form-meta .pwc-forms__field {
+      margin-bottom: 10px; }
+  .pwc-forms .pwc-forms__field-data-value {
+    font-style: italic;
+    font-weight: bold; }
+  .page-section--col-white .pwc-forms fieldset legend {
+    background: #fff; }
+  .page-section--col-light-grey .pwc-forms fieldset legend {
+    background: #f2f2f2; }
+  .pwc-forms fieldset {
+    display: block;
+    padding: 35px 35px 15px 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 35px; }
+    .pwc-forms fieldset fieldset {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .pwc-forms fieldset legend {
+      font-family: georgia, serif;
+      font-size: 1.3rem;
+      margin: -16px;
+      padding: 10px 10px 10px 0;
+      width: auto; }
+    .pwc-forms fieldset .help-block {
+      margin-top: 0;
+      margin-bottom: 10px; }
+    .pwc-forms fieldset.multiselect {
+      padding-top: 20px; }
+    .pwc-forms fieldset.has-error {
+      border: 2px solid #e0301e;
+      background: url("../images/icons/forms/icon-alert-2.png") right 10px top 15px no-repeat;
+      background: url("../images/icons/forms/icon-alert-2.svg") right 10px top 15px no-repeat;
+      background-position: right 10px top 15px;
+      background-size: 24px 24px; }
+      .pwc-forms fieldset.has-error legend {
+        margin-left: -17px; }
+    .pwc-forms fieldset.has-success {
+      border: 2px solid #11735C;
+      background: url("../images/icons/forms/icon-correct.png") right 10px top 15px no-repeat;
+      background: url("../images/icons/forms/icon-correct.svg") right 10px top 15px no-repeat;
+      background-size: 24px 24px; }
+      .pwc-forms fieldset.has-success legend {
+        margin-left: -17px; }
+  .pwc-forms label, .pwc-forms .field-label {
+    font-family: georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    font-weight: normal;
+    display: block; }
+  .pwc-forms .help-block {
+    font-size: 0.85rem;
+    margin: 0 0 5px;
+    padding: 0; }
+    @media (max-width: 767px) {
+      .pwc-forms .help-block {
+        font-size: 1.167rem; } }
+  .pwc-forms .form-group {
+    margin-bottom: 30px; }
+    .pwc-forms .form-group .form-control {
+      font-family: Arial, sans-serif;
+      font-size: 1.142rem;
+      height: auto;
+      line-height: 1.5em;
+      width: 100%;
+      border-radius: 0;
+      color: #404041;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -moz-transition: none;
+      -webkit-transition: none;
+      transition: none; }
+      .pwc-forms .form-group .form-control[type=text], .pwc-forms .form-group .form-control[type=email], .pwc-forms .form-group .form-control[type=password], .pwc-forms .form-group .form-control[type=date] {
+        line-height: normal;
+        padding: 12.5px 20px; }
+      .pwc-forms .form-group .form-control.form-control--transparent {
+        background-color: transparent; }
+      .pwc-forms .form-group .form-control.form-control--fileupload-wrapper {
+        height: auto; }
+      .pwc-forms .form-group .form-control:focus {
+        outline: 1px dotted #212121;
+        outline: -webkit-focus-ring-color auto 5px; }
+    .pwc-forms .form-group textarea.form-control {
+      padding: 10px 15px;
+      resize: vertical; }
+    .pwc-forms .form-group select.form-control {
+      background: #fff url("../images/icons/forms/icon-chevron-horizontal.png") right 15px center no-repeat;
+      background: #fff url("../images/icons/forms/icon-chevron-horizontal.svg") right 15px center no-repeat;
+      background-size: 15px 15px;
+      height: auto;
+      padding-right: 40px;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    .pwc-forms .form-group.pwc-forms__field--select {
+      position: relative; }
+    .pwc-forms .form-group.pwc-forms__field--select.has-error:after {
+      background: url("../images/icons/forms/icon-alert-2.png") 0 0 no-repeat;
+      background: url("../images/icons/forms/icon-alert-2.svg") 0 0 no-repeat;
+      background-size: 24px 24px;
+      bottom: 8px;
+      content: "";
+      display: block;
+      height: 24px;
+      position: absolute;
+      right: 40px;
+      width: 24px;
+      z-index: 100; }
+    .pwc-forms .form-group.pwc-forms__field--select.has-success:after {
+      background: url("../images/icons/forms/icon-correct.png") 0 0 no-repeat;
+      background: url("../images/icons/forms/icon-correct.svg") 0 0 no-repeat;
+      background-size: 24px 24px;
+      bottom: 8px;
+      content: "";
+      display: block;
+      height: 24px;
+      position: absolute;
+      right: 40px;
+      width: 24px;
+      z-index: 100; }
+    .pwc-forms .form-group .context-block {
+      margin-top: 25px; }
+      .pwc-forms .form-group .context-block a, .pwc-forms .form-group .context-block a:visited, .pwc-forms .form-group .context-block a:link {
+        border-bottom: 1px solid #404041;
+        color: #404041;
+        font-size: inherit;
+        text-decoration: none; }
+      .pwc-forms .form-group .context-block a:hover {
+        border-bottom: 2px solid #e0301e;
+        color: #404041;
+        text-decoration: none; }
+        .page-primary-col--orange .pwc-forms .form-group .context-block a:hover {
+          border-bottom: 2px solid #d04a02;
+          color: #404041; }
+        .page-primary-col--red .pwc-forms .form-group .context-block a:hover {
+          border-bottom: 2px solid #e0301e;
+          color: #404041; }
+        .page-primary-col--burgundy .pwc-forms .form-group .context-block a:hover {
+          border-bottom: 2px solid #a32020;
+          color: #404041; }
+        .page-primary-col--maroon .pwc-forms .form-group .context-block a:hover {
+          border-bottom: 2px solid #602320;
+          color: #404041; }
+        .page-primary-col--rose .pwc-forms .form-group .context-block a:hover {
+          border-bottom: 2px solid #d93954;
+          color: #404041; }
+      .pwc-forms .form-group .context-block p {
+        font-size: 0.85rem; }
+      .pwc-forms .form-group .context-block ol, .pwc-forms .form-group .context-block ul {
+        margin: 0 0 0 1.2em;
+        padding: 0;
+        font-size: 0.85rem; }
+        .pwc-forms .form-group .context-block ol li, .pwc-forms .form-group .context-block ul li {
+          line-height: 1.3em;
+          margin-bottom: 5px; }
+      .pwc-forms .form-group .context-block ol.alpha {
+        list-style: lower-alpha; }
+      .pwc-forms .form-group .context-block .context-block-heading {
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      @media (max-width: 767px) {
+        .pwc-forms .form-group .context-block p, .pwc-forms .form-group .context-block ol, .pwc-forms .form-group .context-block ul, .pwc-forms .form-group .context-block .context-block-heading {
+          font-size: 1.167rem; } }
+    .pwc-forms .form-group .pwc-form-datepicker {
+      overflow: auto;
+      display: table;
+      width: 100%; }
+      .pwc-forms .form-group .pwc-form-datepicker .pwc-form-datepicker__input, .pwc-forms .form-group .pwc-form-datepicker .pwc-form-datepicker__icon {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0; }
+      .pwc-forms .form-group .pwc-form-datepicker .date-picker-control {
+        margin-left: 15px;
+        width: 70px;
+        position: relative; }
+        .pwc-forms .form-group .pwc-form-datepicker .date-picker-control .date-picker-control__icon {
+          content: '';
+          width: 55px;
+          height: 45px;
+          display: block;
+          border: 1px solid #ccc;
+          background: url("../images/icons/forms/icon-calendar-off.png") center center no-repeat;
+          background: url("../images/icons/forms/icon-calendar-off.svg") center center no-repeat;
+          background-size: 24px 24px;
+          box-shadow: none;
+          float: right;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+        .pwc-forms .form-group .pwc-form-datepicker .date-picker-control.date-picker-button-active .date-picker-control__icon {
+          background: #404041 url("../images/icons/forms/icon-calendar-on.png") no-repeat;
+          background: #404041 url("../images/icons/forms/icon-calendar-on.svg") no-repeat;
+          background-position: center;
+          background-size: 24px 24px; }
+        .pwc-forms .form-group .pwc-form-datepicker .date-picker-control:focus {
+          outline: 1px dotted #212121;
+          outline: -webkit-focus-ring-color auto 5px; }
+          .pwc-forms .form-group .pwc-form-datepicker .date-picker-control:focus:after {
+            outline: -webkit-focus-ring-color auto 2px; }
+        .pwc-forms .form-group .pwc-form-datepicker .date-picker-control:focus .date-picker-control__icon, .pwc-forms .form-group .pwc-form-datepicker .date-picker-control:hover .date-picker-control__icon {
+          background: #6d6e71 url("../images/icons/forms/icon-calendar-on.png") no-repeat;
+          background: #6d6e71 url("../images/icons/forms/icon-calendar-on.svg") no-repeat;
+          background-position: center;
+          background-size: 24px 24px;
+          cursor: pointer; }
+    .pwc-forms .form-group .pwc-form-password {
+      display: table;
+      width: 100%; }
+      .pwc-forms .form-group .pwc-form-password .inputs {
+        display: table-cell;
+        width: 100%;
+        vertical-align: top;
+        padding-right: 15px; }
+      .pwc-forms .form-group .pwc-form-password .pass-control {
+        display: table-cell;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px; }
+        .pwc-forms .form-group .pwc-form-password .pass-control .control {
+          margin-bottom: 0; }
+    .pwc-forms .form-group select.form-control {
+      font-weight: normal;
+      line-height: normal; }
+    .pwc-forms .form-group.form-group__last-item {
+      margin-bottom: 0; }
+  .pwc-forms .has-error .help-block {
+    color: #404041; }
+  .pwc-forms .has-error .form-control {
+    border: 2px solid #e0301e;
+    padding-right: 40px;
+    background: #fff url("../images/icons/forms/icon-alert-2.png") right 10px center no-repeat;
+    background: #fff url("../images/icons/forms/icon-alert-2.svg") right 10px center no-repeat;
+    background-size: 24px 24px; }
+    .pwc-forms .has-error .form-control.form-control--transparent {
+      background-color: transparent; }
+    .pwc-forms .has-error .form-control.form-control--textarea-wrapper, .pwc-forms .has-error .form-control.form-control--fileupload-wrapper {
+      background-position: right 10px top 10px; }
+    .pwc-forms .has-error .form-control:focus {
+      outline: #e0301e auto 2px;
+      /* Chrome default focus */ }
+  .pwc-forms .has-success .help-block {
+    color: #11735C; }
+  .pwc-forms .has-success .form-control {
+    border: 2px solid #11735C;
+    background: #fff url("../images/icons/forms/icon-correct.png") right 10px center no-repeat;
+    /* PNG Fallback */
+    background: #fff url("../images/icons/forms/icon-correct.svg") right 10px center no-repeat;
+    background-size: 24px 24px;
+    padding-right: 40px; }
+    .pwc-forms .has-success .form-control.form-control--textarea-wrapper, .pwc-forms .has-success .form-control.form-control--fileupload-wrapper {
+      background-position: right 10px top 10px; }
+    .pwc-forms .has-success .form-control:focus {
+      outline: #11735C auto 2px;
+      /* Chrome default focus */ }
+  .pwc-forms .control {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    height: 1rem; }
+  .pwc-forms .control .label-text {
+    color: #3F3F3F;
+    position: relative;
+    margin-top: 5px; }
+  .pwc-forms .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .pwc-forms .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 1px solid #ccc; }
+  .pwc-forms .control--radio .control__indicator {
+    border-radius: 50%; }
+  .pwc-forms .control:hover input ~ .control__indicator {
+    background: #F5F5F5; }
+  .pwc-forms .control--checkbox input:checked ~ .control__indicator {
+    background: #404041;
+    border: 1px solid #404041;
+    background: url("../images/icons/forms/icon-tick.png") no-repeat scroll #49494B;
+    /* PNG Fallback */
+    background: url("../images/icons/forms/icon-tick.svg") no-repeat scroll #49494B;
+    background-position: center;
+    background-size: 15px 15px; }
+  .pwc-forms .control--checkbox input:not([disabled]):focus ~ .control__indicator {
+    outline: 1px dotted #212121;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .pwc-forms .control--checkbox:hover input:not([disabled]):checked ~ .control__indicator {
+    background: url("../images/icons/forms/icon-tick.png") no-repeat scroll #49494B;
+    /* PNG Fallback */
+    background: url("../images/icons/forms/icon-tick.svg") no-repeat scroll #49494B;
+    background-position: center;
+    background-size: 15px 15px; }
+  .pwc-forms .control--radio input:checked ~ .control__indicator {
+    background: #404041;
+    border: 1px solid #404041;
+    background: url("../images/icons/forms/icon-radio.png") no-repeat scroll #49494B;
+    /* PNG Fallback */
+    background: url("../images/icons/forms/icon-radio.svg") no-repeat scroll #49494B;
+    background-position: center;
+    background-size: 15px 15px; }
+  .pwc-forms .control--radio input:not([disabled]):focus ~ .control__indicator {
+    outline: 1px dotted #212121;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .pwc-forms .control--radio:hover input:not([disabled]):checked ~ .control__indicator {
+    background: url("../images/icons/forms/icon-radio.png") no-repeat scroll #49494B;
+    /* PNG Fallback */
+    background: url("../images/icons/forms/icon-radio.svg") no-repeat scroll #49494B;
+    background-position: center;
+    background-size: 15px 15px; }
+  .pwc-forms .control input:disabled ~ .control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none; }
+  .pwc-forms .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none; }
+  .pwc-forms .control input:checked ~ .control__indicator:after {
+    display: none; }
+  .pwc-forms .control--checkbox .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none; }
+  .pwc-forms .control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b; }
+  .pwc-forms .control--radio .control__indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #fff; }
+  .pwc-forms .control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b; }
+  .pwc-forms .control--checkbox {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    height: auto;
+    margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      .pwc-forms .control--checkbox {
+        padding-top: 2px; } }
+  .pwc-forms .form-group.pwc-forms__field--single-check {
+    border: 1px solid #ccc;
+    padding: 10px 10px 0; }
+  .pwc-forms .form-group.pwc-forms__field--single-check.has-error {
+    border: 2px solid #e0301e;
+    background: url("../images/icons/forms/icon-alert-2.png") right 10px top 15px no-repeat;
+    background: url("../images/icons/forms/icon-alert-2.svg") right 10px top 15px no-repeat;
+    background-size: 24px 24px;
+    padding: 10px 10px 0; }
+  .pwc-forms .form-group.pwc-forms__field--single-check.has-success {
+    border: 2px solid #11735C;
+    background: url("../images/icons/forms/icon-correct.png") right 10px top 10px no-repeat;
+    background: url("../images/icons/forms/icon-correct.svg") right 10px top 10px no-repeat;
+    background-size: 24px 24px;
+    padding: 10px 10px 0; }
+  .pwc-forms .control--radio {
+    font-family: Arial;
+    font-size: 1.2em;
+    line-height: 2rem;
+    height: auto;
+    margin-bottom: 10px; }
+  .pwc-forms .control.radio-inline {
+    width: auto;
+    display: inline-block;
+    margin-right: 25px; }
+  .pwc-forms .custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px; }
+  .pwc-forms .custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    margin-top: 30px; }
+    .pwc-forms .custom-file-upload label {
+      display: block;
+      margin-bottom: 5px; }
+  .pwc-forms .file-upload-wrapper {
+    position: relative;
+    margin-bottom: 5px; }
+  .pwc-forms .file-upload-input {
+    width: 100%;
+    color: #404041;
+    font-size: 16px;
+    padding: 11px 17px;
+    border: none;
+    background-color: #fff;
+    float: left; }
+    .pwc-forms .file-upload-input:hover, .pwc-forms .file-upload-input:focus {
+      outline: none; }
+  .pwc-forms .file-upload-button {
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    border: none;
+    margin-left: -1px;
+    float: left; }
+  .pwc-forms .pwc-forms__footer {
+    padding: 10px 0 20px; }
+    @media (min-width: 768px) {
+      .pwc-forms .pwc-forms__footer {
+        padding: 10px 0 40px; } }
+    .pwc-forms .pwc-forms__footer .pwc-forms__btn {
+      margin-right: 20px; }
+
+.today-but {
+  font-family: georgia, serif;
+  font-weight: bold; }

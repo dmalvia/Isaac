@@ -1,0 +1,22 @@
+/*	Title sub component
+********************/
+.sub-comp--heading .sub-comp--heading__title {
+  margin-bottom: 20px; }
+
+.sub-comp--heading.sub-comp--heading--padding.sub-comp--heading--top-pad {
+  padding-top: 20px; }
+
+.sub-comp--heading.sub-comp--heading--padding.sub-comp--heading--bottom-pad {
+  padding-bottom: 20px; }
+
+.sub-comp--heading.sub-comp--heading--padding .sub-comp--heading__title {
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .sub-comp--heading.sub-comp--heading--padding.sub-comp--heading--top-pad {
+    padding-top: 40px; }
+  .sub-comp--heading.sub-comp--heading--padding.sub-comp--heading--bottom-pad {
+    padding-bottom: 40px; } }
+
+/*  end Title sub component
+********************/

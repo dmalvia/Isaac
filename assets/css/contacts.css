@@ -1,0 +1,269 @@
+/*  Contacts collection 
+********************/
+.contacts-component {
+  padding: 40px 0;
+  /* Advanced Pagination */ }
+  .contacts-component .contacts-component__heading {
+    margin-bottom: 30px; }
+  .contacts-component .contacts-component__heading-row {
+    margin-bottom: 0px; }
+  .contacts-component .contacts-component__heading-divider {
+    border: none;
+    margin: 0 0 15px;
+    border-bottom: 2px solid #6d6e71; }
+  .contacts-component .contacts-component__group-heading {
+    margin: 0 0 30px;
+    color: #6d6e71; }
+  .contacts-component .media-card {
+    padding-bottom: 30px; }
+    .contacts-component .media-card .media-card__image {
+      padding-right: 0;
+      /* override grid padding */ }
+      .contacts-component .media-card .media-card__image .img-responsive--stretch {
+        display: block;
+        height: auto;
+        width: 100%; }
+    .contacts-component .media-card .media-card__thumbnail {
+      box-shadow: none;
+      border: none;
+      margin-bottom: 10px;
+      padding: 0; }
+      .contacts-component .media-card .media-card__thumbnail .thumbnail__clip {
+        overflow: hidden;
+        position: relative;
+        width: 100%; }
+      .contacts-component .media-card .media-card__thumbnail .thumbnail__clip-vert-center {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+    .contacts-component .media-card .media-card__social .media-card__social-link {
+      display: inline-block; }
+      .contacts-component .media-card .media-card__social .media-card__social-link .follow-icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0; }
+        .contacts-component .media-card .media-card__social .media-card__social-link .follow-icon--twitter {
+          background: #05aced; }
+        .contacts-component .media-card .media-card__social .media-card__social-link .follow-icon--linkedin {
+          background: #007cb9; }
+        .contacts-component .media-card .media-card__social .media-card__social-link .follow-icon--googleplus {
+          background: #fff;
+          border: 1px solid #ccc; }
+        .contacts-component .media-card .media-card__social .media-card__social-link .follow-icon--has-pad {
+          padding: 7px; }
+      .contacts-component .media-card .media-card__social .media-card__social-link:hover .follow-icon--twitter {
+        background: #0492c9; }
+      .contacts-component .media-card .media-card__social .media-card__social-link:hover .follow-icon--linkedin {
+        background: #00699d; }
+      .contacts-component .media-card .media-card__social .media-card__social-link:hover .follow-icon--googleplus {
+        background: #d9d9d9; }
+    .contacts-component .media-card .media-card__content {
+      padding-top: 15px; }
+      .contacts-component .media-card .media-card__content .media-card__content-title, .contacts-component .media-card .media-card__content .media-card__content-tel, .contacts-component .media-card .media-card__content .media-card__content-email {
+        font-size: 14px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0 0 5px; }
+        .contacts-component .media-card .media-card__content .media-card__content-title a, .contacts-component .media-card .media-card__content .media-card__content-tel a, .contacts-component .media-card .media-card__content .media-card__content-email a {
+          border-bottom: 1px solid #ccc;
+          display: inline;
+          padding-bottom: 2px;
+          text-decoration: none;
+          transition: all 200ms ease-in-out; }
+          .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: 2px solid #e0301e;
+            /* Loop to create colour variations */ }
+            .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .page-primary-col--orange .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+              border-bottom: 2px solid #d04a02; }
+            .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .page-primary-col--red .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+              border-bottom: 2px solid #e0301e; }
+            .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .page-primary-col--burgundy .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+              border-bottom: 2px solid #a32020; }
+            .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .page-primary-col--maroon .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+              border-bottom: 2px solid #602320; }
+            .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-title a:hover, .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-title a:focus, .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-tel a:hover, .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-tel a:focus, .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-email a:hover, .page-primary-col--rose .contacts-component .media-card .media-card__content .media-card__content-email a:focus {
+              border-bottom: 2px solid #d93954; }
+    .contacts-component .media-card .media-card__heading {
+      margin: 0;
+      font-style: normal; }
+      .contacts-component .media-card .media-card__heading a {
+        border-bottom: 1px solid #ccc;
+        display: inline;
+        padding-bottom: 3px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out; }
+        .contacts-component .media-card .media-card__heading a:hover, .contacts-component .media-card .media-card__heading a:focus {
+          border-bottom: 2px solid #e0301e;
+          /* Loop to create colour variations */
+          text-decoration: none;
+          padding-bottom: 2px; }
+          .page-primary-col--orange .contacts-component .media-card .media-card__heading a:hover, .page-primary-col--orange .contacts-component .media-card .media-card__heading a:focus {
+            border-bottom: 2px solid #d04a02; }
+          .page-primary-col--red .contacts-component .media-card .media-card__heading a:hover, .page-primary-col--red .contacts-component .media-card .media-card__heading a:focus {
+            border-bottom: 2px solid #e0301e; }
+          .page-primary-col--burgundy .contacts-component .media-card .media-card__heading a:hover, .page-primary-col--burgundy .contacts-component .media-card .media-card__heading a:focus {
+            border-bottom: 2px solid #a32020; }
+          .page-primary-col--maroon .contacts-component .media-card .media-card__heading a:hover, .page-primary-col--maroon .contacts-component .media-card .media-card__heading a:focus {
+            border-bottom: 2px solid #602320; }
+          .page-primary-col--rose .contacts-component .media-card .media-card__heading a:hover, .page-primary-col--rose .contacts-component .media-card .media-card__heading a:focus {
+            border-bottom: 2px solid #d93954; }
+    @media (min-width: 768px) {
+      .contacts-component .media-card {
+        height: 210px; } }
+  .contacts-component .listing-filters {
+    padding-top: 0;
+    padding-bottom: 30px; }
+    .contacts-component .listing-filters .form-group {
+      display: inline-block;
+      margin-right: 6px; }
+    .contacts-component .listing-filters .listing-filters__select {
+      background: #fff url("../images/icon-chevron-horizontal.png") right 15px center no-repeat;
+      /* PNG fallback */
+      background: #fff url("../images/icon-chevron-horizontal.svg") right 15px center no-repeat;
+      background-size: 15px 15px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      height: auto;
+      line-height: 1.1em;
+      min-width: 150px;
+      padding-right: 40px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 100%;
+      border-radius: 0; }
+      .contacts-component .listing-filters .listing-filters__select:hover {
+        border-color: #404041; }
+      .contacts-component .listing-filters .listing-filters__select:focus {
+        outline: 1px dotted #212121;
+        outline: -webkit-focus-ring-color auto 5px; }
+  .contacts-component .contacts-component__pagination .btn--previous {
+    float: left; }
+    .contacts-component .contacts-component__pagination .btn--previous:before {
+      content: "\003c"; }
+  .contacts-component .contacts-component__pagination .btn--next {
+    float: right; }
+    .contacts-component .contacts-component__pagination .btn--next:after {
+      content: "\003e"; }
+  .contacts-component .contacts-component__pagination-wrapper {
+    text-align: center; }
+    .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination {
+      display: inline-block;
+      margin: 0; }
+      .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 0;
+        padding: 5px;
+        font-family: georgia, serif;
+        font-size: 1.286rem;
+        float: left; }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+          background: #e0301e;
+          border-bottom: 1px solid #e0301e;
+          color: #fff;
+          /* Loop to create colour variations */ }
+          .page-primary-col--orange .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+            background: #d04a02;
+            border-bottom: 1px solid #d04a02; }
+          .page-primary-col--red .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+            background: #e0301e;
+            border-bottom: 1px solid #e0301e; }
+          .page-primary-col--burgundy .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+            background: #a32020;
+            border-bottom: 1px solid #a32020; }
+          .page-primary-col--maroon .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+            background: #602320;
+            border-bottom: 1px solid #602320; }
+          .page-primary-col--rose .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.active {
+            background: #d93954;
+            border-bottom: 1px solid #d93954; }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous {
+          margin-left: 0;
+          margin-right: 5px; }
+          .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous a {
+            margin-left: 5px; }
+          .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left {
+            position: relative; }
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:before, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:after {
+              left: -7px; }
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:before {
+              -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+              -ms-transform: translate(0, 0) rotate(-45deg);
+              transform: translate3d(0, 0, 0) rotate(-45deg); }
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:after {
+              -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+              -ms-transform: translate(0, 0) rotate(45deg);
+              transform: translate3d(0, 0, 0) rotate(45deg); }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next {
+          margin-left: 10px; }
+          .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next a {
+            margin-right: 5px; }
+          .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right {
+            position: relative;
+            float: right; }
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:before {
+              -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+              -ms-transform: translate(0, 0) rotate(45deg);
+              transform: translate3d(0, 0, 0) rotate(45deg); }
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:after {
+              -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+              -ms-transform: translate(0, 0) rotate(-45deg);
+              transform: translate3d(0, 0, 0) rotate(-45deg); }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:before, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:after, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:before, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 7px;
+          height: 1px;
+          background: #404041; }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:before, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:before {
+          top: 5px; }
+          @media (min-width: 768px) {
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:before, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:before {
+              top: 7px; } }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:after, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:after {
+          top: 10px; }
+          @media (min-width: 768px) {
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__previous .css-arrow--left:after, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li.advanced-pagination__next .css-arrow--right:after {
+              top: 12px; } }
+        .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li a {
+          border-bottom: 1px solid #ccc;
+          color: #404041;
+          cursor: pointer;
+          padding-bottom: 2px;
+          text-decoration: none;
+          -ms-transition: all 200ms ease-in-out;
+          -webkit-transition: all 200ms ease-in-out;
+          -moz-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out; }
+          @media (min-width: 768px) {
+            .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li a {
+              padding-bottom: 4px; } }
+          .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li a:hover, .contacts-component .contacts-component__pagination-wrapper .contacts-component__advanced-pagination li a:focus {
+            border-bottom: 2px solid #e0301e; }
+  .contacts-component.contacts-component--condensed {
+    padding: 0;
+    /*  padding will be applied by the parent Column control column */ }
+    .dpe-parsys-col--50 .contacts-component.contacts-component--condensed .media-card, .dpe-parsys-col--33 .contacts-component.contacts-component--condensed .media-card {
+      width: 100%;
+      /* force contact item to be 100% in narrow columns */ }
+    @media (min-width: 768px) {
+      .contacts-component.contacts-component--condensed .media-card {
+        height: auto;
+        /*    do not apply fixed height: */ } }
+
+/*  include fix for DPE version of componentColours*/
+.contactscollection .media-card .text-component p.small-copy {
+  margin-bottom: 2px; }
+
+.contacts-component .media-card .media-card__thumbnail .thumbnail__clip {
+  padding-top: 0;
+  background: none; }
+
+/*  end Contacts collection 
+********************/

@@ -1,0 +1,241 @@
+.image-wrapper {
+  display: inline-block;
+  position: relative; }
+  .image-wrapper .image-share {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    background: url("../images/pwc_share_bt_off.png") no-repeat;
+    background-size: 30px 30px;
+    z-index: 10; }
+
+.image-wrapper:hover .image-share {
+  display: block; }
+
+html.touch .image-wrapper .image-share {
+  display: none; }
+
+html.touch .image-wrapper.touch-share .image-share {
+  display: block; }
+
+.image-share:hover, .video-share:hover {
+  cursor: pointer; }
+
+.image-wrapper .image-share.open,
+html.touch .image-wrapper .image-share.open {
+  background: url("../images/pwc_share_bt_on.png");
+  background-size: 30px 30px;
+  display: block; }
+
+.image-share-options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  opacity: 0;
+  -moz-transition: opacity .15s linear;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear; }
+
+.image-wrapper.sharing .image-share-options {
+  display: block;
+  opacity: 1;
+  -moz-transition: opacity .25s linear;
+  -webkit-transition: opacity .25s linear;
+  transition: opacity .25s linear; }
+
+.image-share-options-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.image-share-options {
+  line-height: 36px; }
+
+.image-share-options .image-share-heading {
+  font-family: georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #fff;
+  margin-right: 10px; }
+
+.image-share-options ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0; }
+
+.image-share-options ul li {
+  display: inline-block;
+  margin: 0; }
+
+.image-share-options-content .sti-btn,
+.jw-plugin-sharing .jw-sharing-icon {
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/sti-button-flat-small.png");
+  display: inline-block;
+  margin: 5px 2px 0;
+  text-indent: -9999em;
+  border-radius: 50%;
+  background-size: auto; }
+
+.image-share-options-content .sti-facebook-btn,
+.video-share-options-content .sti-facebook-btn,
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-facebook {
+  background-color: #305891;
+  background-position: 0 0; }
+
+.image-share-options-content .sti-twitter-btn,
+.video-share-options-content .sti-twitter-btn,
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-twitter {
+  background-position: 0 -36px;
+  background-color: #05aced; }
+
+.image-share-options-content .sti-linkedin-btn,
+.video-share-options-content .sti-linkedin-btn,
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-linkedin {
+  background-position: 0 -108px;
+  background-color: #007cb9; }
+
+.image-share-options-content .sti-google-btn,
+.video-share-options-content .sti-google-btn,
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-googleplus {
+  background-position: 0 -72px;
+  background-color: #db4935; }
+
+.image-share-options-content .sti-pinterest-btn,
+.video-share-options-content .sti-pinterest-btn,
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-pinterest {
+  background-position: 0 -144px;
+  background-color: #cd001b; }
+
+#jwVideo.jw-skin-vapor .jw-dock-button.jw-background-color,
+#jwVideo.jw-skin-vapor .jw-dock-button {
+  background: #6d6e71 url("../images/pwc_share_bt_off.png") no-repeat;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  margin: 0;
+  height: 30px;
+  width: 30px; }
+
+.jw-preview, .jw-plugin-sharing {
+  background: rgba(0, 0, 0, 0.8); }
+
+.jw-sharing-dock-btn .jw-dock-image {
+  display: none; }
+
+.jw-plugin-sharing .jw-sharing-inline-icon {
+  border-radius: 50%;
+  margin-right: .5em;
+  background-size: 100% auto; }
+
+.jw-plugin-sharing .jw-sharing-heading {
+  font-family: georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #fff;
+  margin: 0 0 5px 0; }
+
+.jw-plugin-sharing .jw-sharing-close-icon {
+  background-size: 30px 30px;
+  width: 40px;
+  height: 40px; }
+
+.jw-icon-close {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  background: url("../images/pwc_share_bt_on.png") no-repeat;
+  background-size: 30px 30px;
+  z-index: 10; }
+
+.jw-icon-close:before {
+  display: none; }
+
+.jw-dock {
+  margin: 10px !important; }
+
+.jwplayer .jw-preview {
+  background-size: 100% auto; }
+
+.jw-plugin-sharing .jw-sharing-container {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.jw-skin-vapor .jw-slider-horizontal .jw-slider-container {
+  height: 2em; }
+
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-link {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%2299.7%22%20viewBox%3D%220%200%20100%2099.7%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M43.6%2026.5L35.1%2018c-4.7-4.7-12.3-4.7-17%200-4.7%204.7-4.7%2012.3%200%2016.9l17%2016.9c4.7%204.7%2012.2%204.7%2016.9.1l8.5%208.5-4.2%204.2c-7%207-18.5%207-25.5%200L5.3%2039.2c-7-7-7-18.4%200-25.4l8.5-8.5c7-7%2018.5-7%2025.5%200L52.1%2018l-8.5%208.5z%22%2F%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M56.4%2073.2l8.5%208.5c4.7%204.7%2012.3%204.7%2017%200%204.7-4.7%204.7-12.3%200-16.9l-17-16.9c-4.7-4.7-12.2-4.7-16.9-.1l-8.5-8.5%204.2-4.2c7-7%2018.5-7%2025.5%200l25.5%2025.4c7%207%207%2018.4%200%2025.4l-8.5%208.5c-7%207-18.5%207-25.5%200L47.9%2081.7l8.5-8.5z%22%2F%3E%3C%2Fsvg%3E");
+  border-radius: 0;
+  background-size: 34px auto; }
+
+.jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-embed {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22175.5%22%20height%3D%22100%22%20viewBox%3D%22412.6%20557.2%20175.5%20100%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M528.8%20558.4c3.9%202.3%205.3%207.2%203%2011.1L483%20653.3c-2.3%203.9-7.2%205.1-11.1%203-3.9-2.3-5.3-7.2-3-11.1l48.8-83.8c2.1-4.1%207.2-5.3%2011.1-3zM556.5%20575.2l29.2%2029.2c3.2%203.2%203.2%208.4%200%2011.6l-29.2%2029.2c-3.2%203.2-8.4%203.2-11.8%200-3.2-3.2-3.2-8.4%200-11.6l23.4-23.4-23.4-23.4c-3.2-3.2-3.2-8.4%200-11.6%203.4-3.3%208.5-3.3%2011.8%200zM455.9%20575.2c3.2%203.2%203.2%208.4%200%2011.6l-23.4%2023.4%2023.4%2023.4c3.2%203.2%203.2%208.4%200%2011.6-3.2%203.2-8.4%203.2-11.8%200L414.9%20616c-3.2-3.2-3.2-8.4%200-11.6l29.2-29.2c3.3-3.3%208.4-3.3%2011.8%200z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 34px auto !important;
+  border-radius: 0; }
+
+@media (max-width: 768px) {
+  .image-share-options-content .sti-btn,
+  .jw-plugin-sharing .jw-sharing-inline-icon {
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/sti-button-flat.png"); }
+  .image-share-options-content .sti-twitter-btn,
+  .jw-sharing-icon .jw-sharing-icon-twitter {
+    background-position: 0 -48px; }
+  .image-share-options-content .sti-linkedin-btn,
+  .jw-plugin-sharing .jw-sharing-icon-linkedin {
+    background-position: 0 -144px; }
+  .image-share-options-content .sti-google-btn,
+  .video-share-options-content .sti-google-btn {
+    background-position: 0 -96px; }
+  .image-share-options-content .sti-pinterest-btn,
+  .jw-plugin-sharing .jw-sharing-icon-pinterest {
+    background-position: 0 -192px; }
+  .image-share-options span {
+    line-height: 48px; }
+  .jw-plugin-sharing .jw-sharing-content {
+    width: 100%; }
+  #jwVideo.jw-skin-vapor .jw-dock-button.jw-background-color,
+  #jwVideo.jw-skin-vapor .jw-dock-button, .jw-icon-close,
+  .image-share, .image-wrapper .image-share.open {
+    height: 48px;
+    width: 48px;
+    background-size: 48px 48px; }
+  .jw-plugin-sharing .jw-sharing-close-icon {
+    background-size: 40px 40px;
+    width: 58px;
+    height: 58px; } }
+
+/* V2 update :not(.jw-flag-small-player) */
+.jwplayer:not(.jw-flag-small-player) .jw-plugin-sharing.jw-show {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  border: none;
+  border-radius: 0;
+  max-width: none; }
+
+.jwplayer:not(.jw-flag-small-player) .jw-plugin-sharing .jw-sharing-icon {
+  width: 36px;
+  height: 36px;
+  background-size: auto; }
+
+.jwplayer:not(.jw-flag-small-player) .jw-plugin-sharing .jw-sharing-icon.jw-sharing-icon-link {
+  background-size: 34px auto; }

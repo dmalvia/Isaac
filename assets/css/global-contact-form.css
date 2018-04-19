@@ -1,0 +1,53 @@
+/*	Global contact form 
+********************/
+.contactUsForm .contactus {
+  /* Primary Button */
+  /* Secondary Button */ }
+  .contactUsForm .contactus .btn, .contactUsForm .contactus .btn:link, .contactUsForm .contactus .btn:hover, .contactUsForm .contactus .btn:focus {
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 23px;
+    font-size: 1rem;
+    /* 14px on desktop and 12px on mobile	*/
+    line-height: 1.14em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out; }
+  .contactUsForm .contactus .btn:hover {
+    cursor: pointer; }
+  .contactUsForm .contactus button.btn[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=50);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .50; }
+  .contactUsForm .contactus .btn--primary, .contactUsForm .contactus .btn--primary:focus .btn--primary:hover, .contactUsForm .contactus .btn--primary:active, .contactUsForm .contactus .btn--primary:visited {
+    background: #e0301e;
+    border-radius: 0;
+    border: 1px solid transparent;
+    color: #fff; }
+  .contactUsForm .contactus .btn--primary:focus, .contactUsForm .contactus .btn--primary:hover {
+    background: #be291a; }
+  .contactUsForm .contactus .btn--primary:active {
+    background: #b32618; }
+  .contactUsForm .contactus .btn--transparent, .contactUsForm .contactus .btn--transparent:link, .contactUsForm .contactus .btn--transparent:visited {
+    background: transparent;
+    border: 1px solid #6d6e71;
+    color: #404041; }
+  .contactUsForm .contactus .btn--transparent:hover, .contactUsForm .contactus .btn--transparent:focus {
+    background: #6d6e71;
+    border: 1px solid #6d6e71;
+    color: #fff; }
+  .contactUsForm .contactus .btn--transparent:active {
+    background: #404041;
+    border-color: #404041;
+    color: #fff; }
+
+/* Colour themes */
+/*	end Global contact form 
+********************/

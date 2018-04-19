@@ -1,0 +1,66 @@
+/*	Login register form component
+********************/
+.login-register {
+  padding: 10px 15px 30px; }
+  .login-register .form-group {
+    padding-bottom: 10px; }
+  .login-register .btn {
+    padding: 15px 40px; }
+    .login-register .btn.btn--register {
+      margin: 15px 0 25px; }
+  .login-register input[type=text], .login-register input[type=email], .login-register input[type=password] {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #6d6e71; }
+  .login-register .login-register--links a:hover {
+    color: #e0301e; }
+  .login-register .login-register--social {
+    margin-bottom: 25px; }
+    .login-register .login-register--social .login-register--social__text {
+      margin-right: 15px;
+      line-height: 45px;
+      vertical-align: middle;
+      display: block;
+      float: left; }
+    .login-register .login-register--social .login-register--social__icon {
+      text-decoration: none; }
+  .login-register .sh {
+    display: inline-block;
+    height: 45px; }
+    .login-register .sh .sti-btn {
+      width: 36px;
+      height: 36px;
+      background-image: url(http://www.pwc.com/content/pwc/script/network/parallax/sti-button-flat-small.png);
+      display: inline-block;
+      margin: 5px 2px 0;
+      text-indent: -9999em; }
+      .login-register .sh .sti-btn.sti-facebook-btn {
+        background-position: 0 0 !important;
+        background-color: #305891; }
+        .login-register .sh .sti-btn.sti-facebook-btn:hover {
+          background-color: #284978; }
+      .login-register .sh .sti-btn.sti-linkedin-btn {
+        background-color: #007cb9;
+        background-position: 0 -108px !important; }
+        .login-register .sh .sti-btn.sti-linkedin-btn:hover {
+          background-color: #006ba1; }
+
+.login-register::-webkit-input-placeholder {
+  color: #6d6e71; }
+
+.login-register:-ms-input-placeholder {
+  color: #6d6e71; }
+
+.login-register::-moz-placeholder {
+  color: #6d6e71;
+  opacity: 1; }
+
+.login-register:-moz-placeholder {
+  color: #6d6e71;
+  opacity: 1; }
+
+/*	end Login register form component
+********************/

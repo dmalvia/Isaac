@@ -1,0 +1,113 @@
+/*  Office collection
+********************/
+.office-collection {
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .office-collection {
+      padding: 40px 0; } }
+  @media (min-width: 768px) {
+    .office-collection .office-collection__groups-wrapper {
+      min-height: 320px; } }
+  .office-collection .office-collection__group-heading {
+    border-top: 2px solid #ccc;
+    color: #6d6e71;
+    padding-top: 7px;
+    padding-bottom: 15px; }
+  @media (min-width: 768px) {
+    .office-collection .office-collection__flex-row {
+      min-height: 250px; } }
+  .flexbox .office-collection .office-collection__flex-row {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    flex-wrap: wrap; }
+  .office-collection .office-collection__item {
+    clear: none;
+    padding-bottom: 20px; }
+    @media (min-width: 768px) {
+      .office-collection .office-collection__item {
+        padding-bottom: 40px; } }
+  .office-collection .office-collection__office-name {
+    font-size: 1.429rem; }
+    .office-collection .office-collection__office-name a.lg-text-link {
+      font-size: 1.429rem;
+      font-style: normal; }
+  .office-collection .office-collection__office-info p {
+    color: #404041;
+    font-size: 1rem;
+    line-height: 1.714em;
+    margin: 0; }
+  .office-collection .office-collection__office-info p:nth-child(n+2) {
+    color: #6d6e71; }
+  .office-collection .office-collection__office-info a, .office-collection .office-collection__office-info a:visited, .office-collection .office-collection__office-info a:link {
+    border-bottom: 1px solid #404041;
+    color: #404041;
+    font-size: inherit;
+    text-decoration: none; }
+    .office-collection .office-collection__office-info a.hide-link, .office-collection .office-collection__office-info a:visited.hide-link, .office-collection .office-collection__office-info a:link.hide-link {
+      border-bottom: none;
+      cursor: default; }
+  .office-collection .office-collection__office-info a:hover {
+    border-bottom: 2px solid #e0301e;
+    color: #404041;
+    text-decoration: none; }
+    .page-secondary-col--orange .office-collection .office-collection__office-info a:hover {
+      border-bottom: 2px solid #d04a02;
+      color: #404041; }
+    .page-secondary-col--red .office-collection .office-collection__office-info a:hover {
+      border-bottom: 2px solid #e0301e;
+      color: #404041; }
+    .page-secondary-col--burgundy .office-collection .office-collection__office-info a:hover {
+      border-bottom: 2px solid #a32020;
+      color: #404041; }
+    .page-secondary-col--maroon .office-collection .office-collection__office-info a:hover {
+      border-bottom: 2px solid #602320;
+      color: #404041; }
+    .page-secondary-col--rose .office-collection .office-collection__office-info a:hover {
+      border-bottom: 2px solid #d93954;
+      color: #404041; }
+    .office-collection .office-collection__office-info a:hover.hide-link {
+      border-bottom: none;
+      cursor: default; }
+  .office-collection .listing-filters {
+    padding-top: 0;
+    padding-bottom: 30px; }
+    .office-collection .listing-filters .form-group {
+      display: block;
+      margin-right: 6px; }
+    .office-collection .listing-filters .listing-filters__select {
+      background: #fff url("../images/office-collection/icon-chevron-horizontal.png") right 15px center no-repeat;
+      /* PNG fallback */
+      background: #fff url("../images/office-collection/icon-chevron-horizontal.svg") right 15px center no-repeat;
+      background-size: 15px 15px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      height: auto;
+      line-height: 1.1em;
+      min-width: 150px;
+      padding-right: 40px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 100%; }
+      .office-collection .listing-filters .listing-filters__select:hover {
+        border-color: #404041; }
+      .office-collection .listing-filters .listing-filters__select:focus {
+        outline: 1px dotted #212121;
+        outline: -webkit-focus-ring-color auto 5px; }
+  .office-collection .office-collection__filters {
+    display: none; }
+  .office-collection.office-collection--reveal-filters .office-collection__filters {
+    display: block; }
+  .office-collection:not(.office-collection--has-js) {
+    /* Clear left alternative CSS method for browsers that don't support flexbox such as IE9 and no JS */ }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .office-collection:not(.office-collection--has-js) .office-collection__item:nth-child(2n + 1) {
+        /* 2 items per row */
+        clear: left; } }
+    @media (min-width: 992px) {
+      .office-collection:not(.office-collection--has-js) .office-collection__item:nth-child(4n + 1) {
+        /* 4 items per row */
+        clear: left; } }
+
+/*  end Office collection
+********************/

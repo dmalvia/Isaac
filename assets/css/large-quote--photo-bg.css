@@ -1,0 +1,63 @@
+/*	Large quote on photo bg
+********************/
+.large-quote-component--photo-bg {
+  background: rgba(0, 0, 0, 0.75); }
+  .large-quote-component--photo-bg .large-quote-component__content {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    min-height: 25rem;
+    /*	equivalent to 350px */
+    color: #ffffff; }
+  .large-quote-component--photo-bg .large-quote-component__text {
+    left: 0;
+    padding: 80px 0;
+    padding: 5.714rem 0;
+    /*	renders as 80px 0 on desktop, assuming medium / normal browser text size: */
+    position: relative;
+    top: 0;
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+    width: 100%; }
+  .large-quote-component--photo-bg .large-quote-component__content blockquote p {
+    border-bottom: none;
+    display: block;
+    letter-spacing: 0;
+    margin: 0;
+    padding-bottom: 15px; }
+  .large-quote-component--photo-bg .large-quote-component__content blockquote footer {
+    color: #ffffff;
+    font-family: georgia,serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-top: 10px; }
+    .large-quote-component--photo-bg .large-quote-component__content blockquote footer:before {
+      content: ''; }
+  .large-quote-component--photo-bg .large-quote-component__content blockquote cite {
+    display: block;
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal; }
+  @media (max-width: 767px) {
+    .large-quote-component--photo-bg .large-quote-component__content {
+      min-height: 0; }
+    .large-quote-component--photo-bg .large-quote-component__text {
+      position: relative;
+      top: 0;
+      -ms-transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      transform: translateY(0%); } }
+  @media (min-width: 768px) {
+    .large-quote-component--photo-bg .large-quote-component__content {
+      display: table; }
+    .large-quote-component--photo-bg .large-quote-component__text-wrapper {
+      display: table-cell;
+      vertical-align: middle; } }
+
+/*	end Large quote on photo bg
+********************/

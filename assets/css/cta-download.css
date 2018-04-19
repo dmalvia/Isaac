@@ -1,0 +1,125 @@
+/* BEGIN Download component */
+.cta-download .cta-download__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 40px 0;
+  position: relative;
+  display: block; }
+  .cta-download .cta-download__link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: all ease .2s;
+    z-index: 2; }
+  .cta-download .cta-download__link:hover:before {
+    opacity: 1; }
+
+.cta-download .cta-download__icon {
+  z-index: 3; }
+
+.cta-download .cta-download__content {
+  z-index: 3; }
+  .cta-download .cta-download__content .cta-download__title {
+    margin: 0; }
+  .cta-download .cta-download__content .cta-download__heading {
+    font-weight: bold;
+    margin: 0;
+    color: #fff; }
+
+.cta-download .cta-download_additional .cta-download__additional-trigger {
+  padding: 15px 0;
+  display: block;
+  border-top: 1px solid #fff;
+  position: relative;
+  text-decoration: none; }
+  .cta-download .cta-download_additional .cta-download__additional-trigger:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: all ease .2s;
+    z-index: 3; }
+  .cta-download .cta-download_additional .cta-download__additional-trigger:hover, .cta-download .cta-download_additional .cta-download__additional-trigger:focus {
+    color: #fff;
+    /* For Firefox */ }
+  .cta-download .cta-download_additional .cta-download__additional-trigger:hover:before {
+    opacity: 1; }
+  .cta-download .cta-download_additional .cta-download__additional-trigger .cta-download__additional-trigger-wrapper {
+    z-index: 3; }
+  .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down {
+    position: relative; }
+    .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down:before, .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 1px;
+      background: #fff; }
+    .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down:before {
+      -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+      transform: translate3d(0, 0, 0) rotate(45deg);
+      top: 7px; }
+    .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down:after {
+      -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+      transform: translate3d(0, 0, 0) rotate(-45deg);
+      top: 7px;
+      left: 8px; }
+    .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down.css-arrow--down-rotate:before {
+      left: 8px; }
+    .cta-download .cta-download_additional .cta-download__additional-trigger .css-arrow--down.css-arrow--down-rotate:after {
+      left: 0; }
+  .cta-download .cta-download_additional .cta-download__additional-trigger .cta-download__additional-trigger-text {
+    font-size: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 4;
+    margin-left: 30px;
+    color: #fff; }
+
+.cta-download .cta-download_additional-wrapper {
+  clear: both;
+  display: none;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 15px 0 25px; }
+  .cta-download .cta-download_additional-wrapper .cta-download_additional-heading {
+    color: #fff;
+    margin-bottom: 14px; }
+  .cta-download .cta-download_additional-wrapper .cta-download_additional-links li {
+    margin-bottom: 14px;
+    list-style: none; }
+    .cta-download .cta-download_additional-wrapper .cta-download_additional-links li a {
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      font-family: Georgia, serif;
+      font-size: 16px;
+      font-size: 1.142rem;
+      line-height: 1.7em;
+      -ms-transition: all 200ms ease-in-out;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      text-decoration: none;
+      padding-bottom: 3px;
+      display: inline; }
+      .cta-download .cta-download_additional-wrapper .cta-download_additional-links li a:hover, .cta-download .cta-download_additional-wrapper .cta-download_additional-links li a:focus {
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
+        padding-bottom: 2px; }
+      @media (max-width: 768px) {
+        .cta-download .cta-download_additional-wrapper .cta-download_additional-links li a {
+          padding-bottom: 2px; }
+        .cta-download .cta-download_additional-wrapper .cta-download_additional-links li a:hover {
+          padding-bottom: 1px; } }
+
+/* END Download component */

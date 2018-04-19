@@ -1,0 +1,35 @@
+/*  PwC lists - Horizontal links listing
+********************/
+.sub-comp--horiz-links {
+  padding: 0; }
+  .sub-comp--horiz-links .sub-comp--horiz-links__title {
+    color: #6d6e71;
+    display: inline-block;
+    margin: 0 20px 20px 0; }
+  .sub-comp--horiz-links .sub-comp--horiz-links__links {
+    display: inline; }
+  .sub-comp--horiz-links .sub-comp--horiz-links__link {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0 0 24px;
+    /*   allow an extra 4px for underline    */
+    word-break: break-word; }
+    .sub-comp--horiz-links .sub-comp--horiz-links__link .lg-text-link {
+      line-height: 1.6em; }
+  @media (min-width: 768px) {
+    .sub-comp--horiz-links .sub-comp--horiz-links__link {
+      margin-right: 40px; }
+    .sub-comp--horiz-links.sub-comp--horiz-links--top-pad {
+      padding-top: 40px; }
+    .sub-comp--horiz-links.sub-comp--horiz-links--bottom-pad {
+      padding-bottom: 20px; } }
+  .page-dir--rtl .sub-comp--horiz-links {
+    direction: rtl; }
+    .page-dir--rtl .sub-comp--horiz-links .sub-comp--horiz-links__title {
+      margin: 0 0 20px 20px; }
+    .page-dir--rtl .sub-comp--horiz-links .sub-comp--horiz-links__link {
+      margin-right: 0;
+      margin-left: 40px; }
+
+/*  /*  PwC lists - Horizontal links listing
+********************/

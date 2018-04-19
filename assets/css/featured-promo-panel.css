@@ -1,0 +1,144 @@
+.featuredContent {
+  position: relative;
+  min-height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  border: 1px solid white; }
+  .featuredContent .featuredContent-text {
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+    height: 50%; }
+    .featuredContent .featuredContent-text p {
+      font-family: Arial, sans-serif;
+      font-style: normal; }
+    .featuredContent .featuredContent-text h2 {
+      margin: 5px 0px 10px;
+      color: #fff; }
+      @media (min-width: 768px) {
+        .featuredContent .featuredContent-text h2 {
+          font-size: 24px; } }
+      @media (max-width: 768px) {
+        .featuredContent .featuredContent-text h2 {
+          font-size: 20px; } }
+    @media (min-width: 768px) {
+      .featuredContent .featuredContent-text .lead {
+        font-size: 16px; } }
+    @media (max-width: 768px) {
+      .featuredContent .featuredContent-text .lead {
+        font-size: 14px; } }
+  .featuredContent:hover .featuredContent-text, .featuredContent:hover .featuredContent-text-single {
+    background: #e0301e; }
+  .featuredContent .featuredContent-text-single {
+    color: white;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease; }
+  .featuredContent.no-image {
+    background: #e0301e;
+    padding: 0; }
+    .featuredContent.no-image .featuredContent-text-single {
+      color: white;
+      padding: 10px 30px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all 0.5s ease; }
+    .featuredContent.no-image .featuredContent-text {
+      color: white;
+      padding: 10px 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all 0.5s ease;
+      background: transparent; }
+
+/* Overlay alpha backgrounds */
+.featurecontent .bg-orange,
+.featurecontent .bg-orange .featuredContent-text,
+.featurecontent .bg-orange .featuredContent-text-single {
+  background-color: #d04a02; }
+
+.featurecontent .bg-red,
+.featurecontent .bg-red .featuredContent-text,
+.featurecontent .bg-red .featuredContent-text-single {
+  background-color: #e0301e; }
+
+.featurecontent .bg-rose,
+.featurecontent .bg-rose .featuredContent-text,
+.featurecontent .bg-rose .featuredContent-text-single {
+  background-color: #a93954; }
+
+.featurecontent .bg-burgundy,
+.featurecontent .bg-burgundy .featuredContent-text,
+featurecontent .bg-burgundy .featuredContent-text-single {
+  background-color: #a32020; }
+
+.featurecontent .bg-maroon,
+.featurecontent .bg-maroon .featuredContent-text,
+.featurecontent .bg-maroon .featuredContent-text-single {
+  background-color: #602320; }
+
+.featurecontent .bg-black70,
+.featurecontent .bg-black70 .featuredContent-text,
+.featurecontent .bg-black70 .featuredContent-text-single {
+  background-color: #6d6e71; }
+
+.featurecontent .bg-black,
+.featurecontent .bg-black .featuredContent-text,
+.featurecontent .bg-black .featuredContent-text-single {
+  background-color: #404041; }
+
+.featurecontent .bg-grey,
+.featurecontent .bg-grey .featuredContent-text,
+.featurecontent .bg-grey .featuredContent-text-single {
+  background-color: #736b53; }
+
+.featurecontent .no-image .featuredContent-text, .featurecontent .no-image .featuredContent-text-single {
+  background-color: transparent; }
+
+.featurecontent .bg-orange.no-image:hover {
+  background-color: rgba(208, 74, 2, 0.85); }
+
+.featurecontent .bg-red.no-image:hover {
+  background-color: rgba(224, 48, 30, 0.85); }
+
+.featurecontent .bg-rose.no-image:hover {
+  background-color: rgba(169, 57, 84, 0.85); }
+
+.featurecontent .bg-burgundy.no-image:hover {
+  background-color: rgba(163, 32, 32, 0.85); }
+
+.featurecontent .bg-maroon.no-image:hover {
+  background-color: rgba(96, 35, 32, 0.85); }
+
+.featurecontent .bg-black70.no-image:hover {
+  background-color: rgba(109, 110, 113, 0.85); }
+
+.featurecontent .bg-black.no-image:hover {
+  background-color: rgba(64, 64, 65, 0.85); }
+
+.featurecontent .bg-grey.no-image:hover {
+  background-color: rgba(115, 107, 83, 0.85); }
+
+.featuredContent.no-image:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  z-index: -1; }

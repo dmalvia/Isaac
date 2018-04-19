@@ -1,0 +1,76 @@
+/*	Hero title
+********************/
+.hero-title {
+  background: #e0301e;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  /* Loop to create colour variations */ }
+  .page-primary-col--orange .hero-title {
+    background: #d04a02; }
+  .page-primary-col--red .hero-title {
+    background: #e0301e; }
+  .page-primary-col--burgundy .hero-title {
+    background: #a32020; }
+  .page-primary-col--maroon .hero-title {
+    background: #602320; }
+  .page-primary-col--rose .hero-title {
+    background: #d93954; }
+
+.hero-title-textpanel {
+  background: inherit;
+  margin: 20px 0;
+  padding: 0; }
+
+.hero-title-textpanel h1 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-weight: bold; }
+
+.hero-title .btn-see-more {
+  display: block;
+  background: #404041 url(../images/common/arrowDown.png) center center no-repeat;
+  border-radius: 60px;
+  display: block;
+  height: 60px;
+  margin: 40px auto 40px auto;
+  position: relative;
+  width: 60px; }
+
+@media (min-width: 768px) {
+  body .hero-title-component .hero-title {
+    background: transparent;
+    min-height: 35.715rem;
+    /* min height is set to be 16:9 on desktop*/ }
+  .hero-title-textpanel {
+    background: #fff;
+    color: #000;
+    margin: 40px 0;
+    padding: 40px 40px 20px; }
+  .hero-title-textpanel h1 {
+    color: #000; }
+  .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #e0301e; }
+  .hero-title-textpanel p {
+    color: #404041; }
+  /* hero title with colour heading */
+  .page-primary-col--orange .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #d04a02; }
+  .page-primary-col--red .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #e0301e; }
+  .page-primary-col--burgundy .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #a32020; }
+  .page-primary-col--maroon .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #602320; }
+  .page-primary-col--rose .hero-title-component--colour-h1 .hero-title-textpanel h1 {
+    color: #d93954; } }
+
+@media (min-width: 1024px) {
+  .hero-title .btn-see-more {
+    bottom: 40px;
+    left: 50%;
+    margin: 0 0 0 -30px;
+    position: absolute; } }
+
+/*	end hero title
+********************/

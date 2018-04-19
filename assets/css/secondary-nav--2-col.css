@@ -1,0 +1,323 @@
+/* Start of Secondary Navigation (2 Columns) */
+.secnav-twocol {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* COMPATIBILITY USING BODY CLASSES WITH MODERNIZR */ }
+  .secnav-twocol .secnav-twocol__pane {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 0;
+    -ms-transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; }
+    .secnav-twocol .secnav-twocol__pane .secnav-twocol__heading {
+      margin: 0 0 20px; }
+    .secnav-twocol .secnav-twocol__pane .secnav-twocol__listing {
+      padding-bottom: 0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      width: 100%; }
+  .secnav-twocol.secnav-twocol--popover-active {
+    /* Popover activated on Complex rendition */ }
+    .secnav-twocol.secnav-twocol--popover-active .secnav-twocol__listing {
+      -ms-transform: translate(-100%, 0);
+      transform: translate(-100%, 0); }
+    .secnav-twocol.secnav-twocol--popover-active .secnav-twocol__popover {
+      transform: translate(0%, 0);
+      opacity: 1; }
+  .secnav-twocol .secnav-twocol__popover {
+    left: 0;
+    min-height: 276px;
+    opacity: 0.5;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -ms-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+    width: 100%;
+    background: #f2f2f2; }
+    .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+      font-size: 20px;
+      margin-left: 15px;
+      text-decoration: none;
+      /* Loop to create colour variations */ }
+      .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+        color: #d04a02; }
+      .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+        color: #e0301e; }
+      .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+        color: #a32020; }
+      .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+        color: #602320; }
+      .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close {
+        color: #d93954; }
+      .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left {
+        position: relative;
+        padding-left: 5px;
+        transition: padding 0.25s linear; }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 17px;
+          height: 3px;
+          /* Loop to create colour variations */ }
+          .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+            background: #d04a02; }
+          .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+            background: #e0301e; }
+          .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+            background: #a32020; }
+          .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+            background: #602320; }
+          .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before, .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+            background: #d93954; }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:before {
+          -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+          top: 2px; }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .css-arrow--left:after {
+          -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+          top: 12px; }
+      .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close .secnav-twocol__popover-close-label {
+        display: inline-block;
+        float: left;
+        margin-left: 30px;
+        margin-top: -2px; }
+      .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover {
+        /* Mixin to get hover state of colour */ }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left {
+          padding-left: 0; }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+          /* Loop to create colour variations */ }
+          .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+            /* Includes hover state mixin */
+            background: #b13f02; }
+          .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+            /* Includes hover state mixin */
+            background: #be291a; }
+          .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+            /* Includes hover state mixin */
+            background: #8b1b1b; }
+          .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+            /* Includes hover state mixin */
+            background: #521e1b; }
+          .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:before, .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .css-arrow--left:after {
+            /* Includes hover state mixin */
+            background: #b93147; }
+        .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+          /* Loop to create colour variations */ }
+          .page-primary-col--orange .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+            /* Includes hover state mixin */
+            color: #b13f02; }
+          .page-primary-col--red .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+            /* Includes hover state mixin */
+            color: #be291a; }
+          .page-primary-col--burgundy .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+            /* Includes hover state mixin */
+            color: #8b1b1b; }
+          .page-primary-col--maroon .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+            /* Includes hover state mixin */
+            color: #521e1b; }
+          .page-primary-col--rose .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-close:hover .secnav-twocol__popover-close-label {
+            /* Includes hover state mixin */
+            color: #b93147; }
+    .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-content {
+      padding: 16px 0; }
+      .secnav-twocol .secnav-twocol__popover .secnav-twocol__popover-content p {
+        margin-bottom: 20px; }
+  .secnav-twocol .strip-btn {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.142rem;
+    /* 16px */
+    line-height: 1.3em;
+    margin-bottom: 4px;
+    padding: 12px 70px 12px 20px;
+    position: relative;
+    text-decoration: none;
+    font-style: normal;
+    color: #e0301e;
+    /* Loop to create colour variations */ }
+    .page-primary-col--orange .secnav-twocol .strip-btn {
+      color: #d04a02; }
+    .page-primary-col--red .secnav-twocol .strip-btn {
+      color: #e0301e; }
+    .page-primary-col--burgundy .secnav-twocol .strip-btn {
+      color: #a32020; }
+    .page-primary-col--maroon .secnav-twocol .strip-btn {
+      color: #602320; }
+    .page-primary-col--rose .secnav-twocol .strip-btn {
+      color: #d93954; }
+    @media (min-width: 1024px) {
+      .secnav-twocol .strip-btn {
+        font-size: 20px; } }
+    @media (min-width: 768px) {
+      .secnav-twocol .strip-btn {
+        display: table;
+        float: left;
+        margin-bottom: 4px;
+        width: 49.5%;
+        /*	older browsers	*/
+        width: calc( 50% - 2px);
+        /*	newer browsers	*/ }
+        .secnav-twocol .strip-btn:nth-of-type(even) {
+          float: right; } }
+    .secnav-twocol .strip-btn:hover {
+      background: #fff;
+      color: #e0301e;
+      text-decoration: none;
+      /* Loop to create colour variations */ }
+      .page-primary-col--orange .secnav-twocol .strip-btn:hover {
+        color: #d04a02; }
+      .page-primary-col--red .secnav-twocol .strip-btn:hover {
+        color: #e0301e; }
+      .page-primary-col--burgundy .secnav-twocol .strip-btn:hover {
+        color: #a32020; }
+      .page-primary-col--maroon .secnav-twocol .strip-btn:hover {
+        color: #602320; }
+      .page-primary-col--rose .secnav-twocol .strip-btn:hover {
+        color: #d93954; }
+    .secnav-twocol .strip-btn .strip-btn__text {
+      width: 100%;
+      word-break: break-word; }
+      @media (min-width: 768px) {
+        .secnav-twocol .strip-btn .strip-btn__text {
+          display: table-cell;
+          vertical-align: middle; } }
+    .secnav-twocol .strip-btn .strip-btn__block {
+      bottom: 0;
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 50px;
+      top: 0; }
+      .secnav-twocol .strip-btn .strip-btn__block.strip-btn__icon {
+        background: none;
+        /* Now uses CSS triangle */
+        bottom: 0;
+        padding: 12px 0;
+        position: absolute;
+        right: 0px;
+        top: 0; }
+        .secnav-twocol .strip-btn .strip-btn__block.strip-btn__icon .css-triangle--right {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          margin-left: 2px;
+          vertical-align: middle;
+          border-left: 6px dashed;
+          border-left: 6px solid\9;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          color: inherit;
+          left: 50%;
+          margin: -5px 0 0 -3px;
+          position: absolute;
+          top: 50%; }
+    .secnav-twocol .strip-btn.strip-btn--has-popover {
+      /* Popover for Complex rendition */
+      padding-right: 38px; }
+      @media (min-width: 768px) {
+        .secnav-twocol .strip-btn.strip-btn--has-popover {
+          padding-right: 110px; } }
+      .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger {
+        border-left: 1px solid #e7e7e9;
+        border-right: 1px solid #e7e7e9;
+        display: table;
+        height: 100%;
+        display: none;
+        padding: 10px 0;
+        right: 50px; }
+        .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger.icon-info-text {
+          font-size: 24px;
+          font-style: italic;
+          font-weight: bold; }
+        @media (min-width: 768px) {
+          .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+            color: #fff;
+            border-left: 1px solid #e0301e;
+            border-right: 1px solid #e0301e;
+            background: #e0301e;
+            /* Loop to create colour variations */ }
+            .page-primary-col--orange .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+              border-left: 1px solid #d04a02;
+              border-right: 1px solid #d04a02;
+              background: #d04a02; }
+            .page-primary-col--red .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+              border-left: 1px solid #e0301e;
+              border-right: 1px solid #e0301e;
+              background: #e0301e; }
+            .page-primary-col--burgundy .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+              border-left: 1px solid #a32020;
+              border-right: 1px solid #a32020;
+              background: #a32020; }
+            .page-primary-col--maroon .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+              border-left: 1px solid #602320;
+              border-right: 1px solid #602320;
+              background: #602320; }
+            .page-primary-col--rose .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger:hover {
+              border-left: 1px solid #d93954;
+              border-right: 1px solid #d93954;
+              background: #d93954; } }
+        .secnav-twocol .strip-btn.strip-btn--has-popover .popover-trigger span {
+          display: table-cell;
+          vertical-align: middle; }
+  .flexbox .secnav-twocol .strip-btn .icon-el {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .flexbox .secnav-twocol .strip-btn .icon-el .css-triangle--right {
+      left: auto;
+      margin: 0;
+      position: relative;
+      top: auto; }
+  @media (min-width: 768px) {
+    .flexbox .secnav-twocol .secnav-twocol__listing .strip-btn {
+      align-items: center;
+      display: flex; }
+      .flexbox .secnav-twocol .secnav-twocol__listing .strip-btn .strip-btn__text {
+        display: block; } }
+  .touchevents .secnav-twocol .secnav-twocol__popover {
+    transform: translate(0, 0) translate3d(110%, 0, 0); }
+  .touchevents .secnav-twocol .secnav-twocol--popover-active .secnav-twocol__listing {
+    transform: translate(0, 0) translate3d(-100%, 0, 0); }
+  .touchevents .secnav-twocol .secnav-twocol__listing {
+    transform: translate(0, 0) translate3d(0%, 0, 0); }
+  .touchevents .secnav-twocol .secnav-twocol--popover-active .secnav-twocol__popover {
+    transform: translate(0, 0) translate3d(0%, 0, 0); }
+  @media (min-width: 768px) {
+    .touchevents .secnav-twocol .strip-btn--has-popover .popover-trigger {
+      display: none; } }
+  @media (min-width: 768px) {
+    .no-touchevents .secnav-twocol .strip-btn--has-popover:hover .popover-trigger {
+      border-left: 1px solid #e7e7e9;
+      border-right: 1px solid #e7e7e9;
+      display: table;
+      height: 100%; }
+      .no-touchevents .secnav-twocol .strip-btn--has-popover:hover .popover-trigger span {
+        display: table-cell;
+        vertical-align: middle; } }
+  @media (min-width: 768px) {
+    .secnav-twocol .touchevents.flexbox .strip-btn--has-popover .popover-trigger,
+    .secnav-twocol .no-touchevents.flexbox .strip-btn--has-popover:hover .popover-trigger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .secnav-twocol .touchevents.flexbox .strip-btn--has-popover .popover-trigger span,
+      .secnav-twocol .no-touchevents.flexbox .strip-btn--has-popover:hover .popover-trigger span {
+        display: inline; } }
+
+/* END OF COMPATIBILITY USING BODY CLASSES WITH MODERNIZR */
+/* Start of Secondary Navigation (2 Columns) */

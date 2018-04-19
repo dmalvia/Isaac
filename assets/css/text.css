@@ -1,0 +1,80 @@
+/*  Text component
+********************/
+.text .text-component ul, .text .text-component ol, .textimage .textimage-text ul, .textimage .textimage-text ol {
+  /*display: inline-block;*/
+  display: block;
+  padding-left: 30px;
+  /*margin-left: 0 !important;*/ }
+
+.text-component ul, .text-component ol {
+  margin-bottom: 10px; }
+  .text-component ul li, .text-component ol li {
+    line-height: 1.5em; }
+
+.text-component p > a,
+.text-component td > a,
+.text-component li > a {
+  border-bottom: 1px solid #404041;
+  color: #404041;
+  font-size: inherit;
+  text-decoration: none; }
+
+.text-component p > a:hover, .section.text p > a:hover,
+.text-component td > a:hover, .section.text td > a:hover,
+.text-component li > a:hover, .section.text li > a:hover {
+  border-bottom: 2px solid #e0301e;
+  color: #404041;
+  text-decoration: none; }
+  .page-primary-col--orange .text-component p > a:hover, .page-primary-col--orange .section.text p > a:hover, .page-primary-col--orange
+  .text-component td > a:hover, .page-primary-col--orange .section.text td > a:hover, .page-primary-col--orange
+  .text-component li > a:hover, .page-primary-col--orange .section.text li > a:hover {
+    border-bottom: 2px solid #d04a02;
+    color: #404041; }
+  .page-primary-col--red .text-component p > a:hover, .page-primary-col--red .section.text p > a:hover, .page-primary-col--red
+  .text-component td > a:hover, .page-primary-col--red .section.text td > a:hover, .page-primary-col--red
+  .text-component li > a:hover, .page-primary-col--red .section.text li > a:hover {
+    border-bottom: 2px solid #e0301e;
+    color: #404041; }
+  .page-primary-col--burgundy .text-component p > a:hover, .page-primary-col--burgundy .section.text p > a:hover, .page-primary-col--burgundy
+  .text-component td > a:hover, .page-primary-col--burgundy .section.text td > a:hover, .page-primary-col--burgundy
+  .text-component li > a:hover, .page-primary-col--burgundy .section.text li > a:hover {
+    border-bottom: 2px solid #a32020;
+    color: #404041; }
+  .page-primary-col--maroon .text-component p > a:hover, .page-primary-col--maroon .section.text p > a:hover, .page-primary-col--maroon
+  .text-component td > a:hover, .page-primary-col--maroon .section.text td > a:hover, .page-primary-col--maroon
+  .text-component li > a:hover, .page-primary-col--maroon .section.text li > a:hover {
+    border-bottom: 2px solid #602320;
+    color: #404041; }
+  .page-primary-col--rose .text-component p > a:hover, .page-primary-col--rose .section.text p > a:hover, .page-primary-col--rose
+  .text-component td > a:hover, .page-primary-col--rose .section.text td > a:hover, .page-primary-col--rose
+  .text-component li > a:hover, .page-primary-col--rose .section.text li > a:hover {
+    border-bottom: 2px solid #d93954;
+    color: #404041; }
+
+.text-component ul li,
+.text-component ol li {
+  line-height: 1.5em;
+  font-size: 1.142rem;
+  font-size: 16px; }
+
+.text-component ul {
+  list-style: disc; }
+  .text-component ul ul {
+    list-style: circle; }
+    .text-component ul ul ul {
+      list-style: square; }
+
+.text-component ol {
+  list-style: decimal; }
+  .text-component ol ol {
+    list-style: lower-alpha; }
+    .text-component ol ol ol {
+      list-style: lower-roman; }
+
+.text-component ul, .text-component ol {
+  padding-left: 20px; }
+  .text-component ul ul, .text-component ul ol, .text-component ol ul, .text-component ol ol {
+    margin-top: 8px; }
+
+/*  end Text component
+********************/

@@ -1,0 +1,330 @@
+ul li, ol li {
+  margin-bottom: 8px; }
+
+#wrapper {
+  font-size: small; }
+
+#menuBarWrapper {
+  position: fixed;
+  width: 100%;
+  background: #f3f3f3;
+  box-shadow: 0 0 10px #333;
+  z-index: 1005; }
+
+#menuBarWrapper a {
+  color: #636d72; }
+
+#menuBarWrapper a:hover, #menuBarWrapper a:focus {
+  color: #e1301e; }
+
+#menuBar {
+  width: 100%;
+  background: #fff;
+  height: 85px;
+  border-bottom: 1px solid #f3f3f3;
+  z-index: 1005; }
+
+#menuBar a, #menuBar a:hover {
+  text-decoration: none;
+  font: 16px georgia,sans-serif;
+  margin-left: 15px; }
+
+/*#menuBarWrapper .container {
+	padding-left: 0;
+	padding-right: 0;
+}*/
+#logo {
+  text-indent: -9999em;
+  display: inline-block;
+  width: 69px;
+  height: 52px;
+  background: url(http://www.pwc.com/content/pwc/script/network/parallax/pwclogo.png) no-repeat #fff 0 0;
+  position: relative;
+  top: -30px;
+  margin: 0 10px 0 15px; }
+
+#topBarLeft {
+  float: left;
+  height: 80px;
+  background: #fff; }
+
+#topBarRight {
+  float: right;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+@media (min-width: 1200px) {
+  #topBarRight {
+    right: 15px;
+    position: relative; } }
+
+#logoWrapper {
+  position: relative;
+  top: 46px; }
+
+/*.searchresultslhn a:link, a:visited {
+  color: #80766e;
+  text-decoration: none; }*/
+#menuAdditional {
+  list-style-type: none;
+  margin: 20px 100px 0 0;
+  background: #fff; }
+
+#menuAdditional li {
+  float: left;
+  margin: 0;
+  background: #fff;
+  overflow: hidden; }
+
+#menuAdditional li a, #menuAdditional li a:hover {
+  float: left;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  vertical-align: top;
+  overflow: hidden; }
+
+#menuAdditional li svg {
+  display: block;
+  margin: 10px auto; }
+
+#menuAdditional li input {
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
+  width: 80%;
+  outline: none;
+  border: 0; }
+
+.menuFlyout {
+  float: left;
+  display: inline-block;
+  line-height: 45px;
+  padding: 0 10px;
+  background: #fff;
+  width: 240px;
+  margin-right: -240px;
+  vertical-align: middle;
+  -webkit-transition: margin-right .3s ease-out;
+  -moz-transition: margin-right .3s ease-out;
+  -ms-transition: margin-right .3s ease-out;
+  -o-transition: margin-right .3s ease-out;
+  transition: margin-right .3s ease-out; }
+
+.menuFlyout .sh {
+  float: right;
+  display: inline-block;
+  height: 45px; }
+
+#menuAdditional li .menuFlyout #PwC_countries a {
+  display: block; }
+
+#navigationTrigger {
+  display: none; }
+
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 85px;
+  width: 85px;
+  background-color: #f3f3f3;
+  background-image: none;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer; }
+
+@media (min-width: 980px) {
+  .navbar-toggle {
+    display: block; } }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  width: 30px;
+  height: 3px;
+  left: 28px;
+  background-color: #3f3f40;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out; }
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin: auto; }
+
+.navbar-toggle .icon-bar1 {
+  top: 34px; }
+
+.navbar-toggle.open .icon-bar1 {
+  top: 42px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.navbar-toggle .icon-bar2 {
+  top: 42px; }
+
+.navbar-toggle.open .icon-bar2 {
+  opacity: 0;
+  left: 45px;
+  width: 0; }
+
+.navbar-toggle .icon-bar3 {
+  top: 50px; }
+
+.navbar-toggle.open .icon-bar3 {
+  top: 42px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+.navbar-toggle.open {
+  background: #f3f3f3; }
+
+#navBar {
+  display: none;
+  padding: 10px 0 30px 0;
+  color: #6e6d72;
+  overflow: auto;
+  max-height: 80vh; }
+
+#navBar h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #636363;
+  border-top: 2px solid #e1301e;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-family: georgia,serif;
+  font-style: italic; }
+
+#navBar ul {
+  list-style-type: none; }
+
+#navBar li a {
+  color: #000;
+  font-family: Georgia,serif;
+  font-size: 14px;
+  text-decoration: none; }
+
+@media (min-width: 992px) {
+  #navBar #relatedLinks a {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 13px; } }
+
+#breadcrumbWrapper {
+  background: #fff; }
+
+#breadcrumbWrapper .breadcrumb {
+  padding-top: 12px;
+  padding-bottom: 0;
+  color: #968c6d;
+  font-weight: normal;
+  margin-bottom: 4px;
+  font-size: 13px; }
+
+.breadcrumb {
+  background: transparent; }
+
+.breadcrumb li {
+  display: inline-block;
+  font-size: 14px;
+  padding-right: 10px;
+  vertical-align: top; }
+
+.breadcrumb li a {
+  text-decoration: none; }
+
+.breadcrumb li + li:before {
+  content: "> ";
+  padding: 0 10px 0 5px;
+  color: #c7c8ca;
+  font-weight: normal;
+  vertical-align: top; }
+
+.open > a {
+  outline: 0; }
+
+#menuAdditional li.open .menuFlyout {
+  margin-right: 0; }
+
+/* Social share */
+.menuFlyout .sti-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("http://www.pwc.com/content/pwc/script/network/parallax/sti-button-flat-small.png");
+  display: inline-block;
+  margin: 5px 2px 0;
+  text-indent: -9999em;
+  border-radius: 50%; }
+
+.menuFlyout .sh a {
+  width: auto !important;
+  display: inline-block !important; }
+
+.sh .sti-facebook-btn {
+  background-color: #305891;
+  background-position: 0 0; }
+
+.sh .sti-twitter-btn {
+  background-position: 0 -36px;
+  background-color: #05aced; }
+
+.sh .sti-linkedin-btn {
+  background-position: 0 -108px;
+  background-color: #007cb9; }
+
+.sh .sti-google-btn {
+  background-position: 0 -72px;
+  background-color: #db4935; }
+
+/* Sticky behaviour */
+.slide {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+#menuBarWrapper.slide--up {
+  box-shadow: none; }
+
+.slide--up {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.slide--reset {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
+/* Content area */
+.centerPar {
+  padding-top: 125px;
+  min-height: 100%; }
+
+@media (min-width: 992px) {
+  .contact-detail-component {
+    padding-top: 110px;
+    padding-bottom: 100px; } }
+
+/* Adjustments to components */
+#relatedLinks img {
+  margin-bottom: 5px; }
+
+.navbar-toggle {
+  outline: none; }

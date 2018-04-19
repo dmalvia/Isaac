@@ -1,0 +1,67 @@
+/*  Angular-based animation
+********************/
+/* The starting CSS styles for the enter animation */
+.animate-in.ng-enter,
+.animate-forward.ng-enter {
+  transition: 0.3s ease-in-out all;
+  /*opacity:0;*/
+  transform: translate3d(100%, 0, 0); }
+
+/* The finishing CSS styles for the enter animation */
+.animate-in.ng-enter.ng-enter-active,
+.animate-forward.ng-enter.ng-enter-active {
+  /*opacity:1;*/
+  transform: translate3d(0, 0, 0); }
+
+.animate-forward.ng-leave {
+  transition: 0.3s ease-in-out all;
+  transform: translate3d(0, 0, 0); }
+
+.animate-forward.ng-leave.ng-leave-active {
+  transform: translate3d(-100%, 0, 0); }
+
+.animate-back.ng-enter {
+  transition: 0.3s ease-in-out all;
+  /*opacity:0;*/
+  transform: translate3d(-100%, 0, 0); }
+
+/* The finishing CSS styles for the enter animation */
+.animate-back.ng-enter.ng-enter-active {
+  /*opacity:1;*/
+  transform: translate3d(0%, 0, 0); }
+
+.animate-back.ng-leave {
+  transition: 0.3s ease-in-out all;
+  /*opacity:0;*/
+  transform: translate3d(0%, 0, 0); }
+
+/* The finishing CSS styles for the enter animation */
+.animate-back.ng-leave.ng-leave-active {
+  /*opacity:1;*/
+  transform: translate3d(100%, 0, 0); }
+
+.fade.ng-leave {
+  /*opacity:1;*/ }
+
+.fade.ng-leave.ng-leave-active {
+  /*opacity:0;*/
+  transform: translate3d(-100%, 0, 0); }
+
+.animate-enter,
+.animate-leave {
+  -webkit-transition: 300ms ease-in-out all;
+  -moz-transition: 300ms ease-in-out all;
+  -ms-transition: 300ms ease-in-out all;
+  -o-transition: 300ms ease-in-out all;
+  transition: 300ms ease-in-out all; }
+
+.animate-enter {
+  opacity: 0.3;
+  transform: translate3d(100%, 0, 0); }
+
+.animate-enter.animate-enter-active {
+  opacity: 1;
+  transform: translate3d(0%, 0, 0); }
+
+/*  end Angular-based animation
+********************/

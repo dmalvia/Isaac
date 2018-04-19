@@ -1,0 +1,51 @@
+/* BEGIN awards components for Careers */
+.awards-comp {
+  padding: 40px 0; }
+  .awards-comp.awards-comp--image-only .awards-comp__img {
+    margin: 0 auto;
+    max-height: 120px; }
+  .awards-comp .awards-comp__heading {
+    margin-bottom: 20px; }
+  .awards-comp .awards-comp__col {
+    margin-bottom: 40px; }
+    .awards-comp .awards-comp__col a .awards-comp__title {
+      display: inline;
+      color: #404041;
+      font-style: normal;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      text-decoration: none;
+      transition: all 200ms ease-in-out; }
+    .awards-comp .awards-comp__col a:hover .awards-comp__title, .awards-comp .awards-comp__col a:focus .awards-comp__title {
+      text-decoration: none;
+      padding-bottom: 3px;
+      color: #404041;
+      border-bottom: 2px solid #e0301e; }
+      .page-primary-col--orange .awards-comp .awards-comp__col a:hover .awards-comp__title, .page-primary-col--orange .awards-comp .awards-comp__col a:focus .awards-comp__title {
+        border-bottom: 2px solid #d04a02; }
+      .page-primary-col--red .awards-comp .awards-comp__col a:hover .awards-comp__title, .page-primary-col--red .awards-comp .awards-comp__col a:focus .awards-comp__title {
+        border-bottom: 2px solid #e0301e; }
+      .page-primary-col--burgundy .awards-comp .awards-comp__col a:hover .awards-comp__title, .page-primary-col--burgundy .awards-comp .awards-comp__col a:focus .awards-comp__title {
+        border-bottom: 2px solid #a32020; }
+      .page-primary-col--maroon .awards-comp .awards-comp__col a:hover .awards-comp__title, .page-primary-col--maroon .awards-comp .awards-comp__col a:focus .awards-comp__title {
+        border-bottom: 2px solid #602320; }
+      .page-primary-col--rose .awards-comp .awards-comp__col a:hover .awards-comp__title, .page-primary-col--rose .awards-comp .awards-comp__col a:focus .awards-comp__title {
+        border-bottom: 2px solid #d93954; }
+    .awards-comp .awards-comp__col a:hover .awards-comp__img, .awards-comp .awards-comp__col a:focus .awards-comp__img {
+      cursor: pointer; }
+    .awards-comp .awards-comp__col a:focus .awards-comp__img {
+      outline: 1px dotted #212121;
+      outline: -webkit-focus-ring-color auto 5px; }
+    .awards-comp .awards-comp__col .awards-comp__title {
+      margin: 0; }
+    .awards-comp .awards-comp__col .awards-comp__abstract {
+      font-size: 14px;
+      font-size: 1rem;
+      margin-top: 10px; }
+  .awards-comp .awards-comp__btn {
+    text-align: center; }
+  @media (max-width: 767px) {
+    .awards-comp .awards-comp__img {
+      max-height: 200px; } }
+
+/* END awards components for Careers */

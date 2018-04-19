@@ -1,0 +1,138 @@
+/*	Follow PWC icons - based on SVG with PNG fallback
+********************/
+.follow-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .follow-icon--facebook {
+    background-image: url(../images/social_icons/facebook.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/facebook.svg);
+    background-size: 16px 16px;
+    background-color: #305891; }
+    a:hover .follow-icon--facebook, a:focus .follow-icon--facebook {
+      background-color: #294b7b; }
+  .follow-icon--twitter {
+    background-image: url(../images/social_icons/twitter.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/twitter.svg);
+    background-color: #05aced; }
+    a:hover .follow-icon--twitter, a:focus .follow-icon--twitter {
+      background-color: #0492c9; }
+  .follow-icon--linkedin {
+    background-image: url(../images/social_icons/linkedin.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/linkedin.svg);
+    background-size: 16px 16px;
+    background-color: #007cb9; }
+    a:hover .follow-icon--linkedin, a:focus .follow-icon--linkedin {
+      background-color: #00699d; }
+  .follow-icon--googleplus {
+    background-image: url(../images/social_icons/googleplus.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/googleplus.svg);
+    background-color: #fff; }
+    a:hover .follow-icon--googleplus, a:focus .follow-icon--googleplus {
+      background-color: #ba3e2d; }
+  .follow-icon--googleplus-w {
+    background-image: url(../images/social_icons/googleplus.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/googleplus.svg);
+    background-color: #fff; }
+    a:hover .follow-icon--googleplus-w, a:focus .follow-icon--googleplus-w {
+      background-color: #d9d9d9; }
+  .follow-icon--youtube {
+    background-image: url(../images/social_icons/youtube.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/youtube.svg);
+    background-color: #cd201f; }
+    a:hover .follow-icon--youtube, a:focus .follow-icon--youtube {
+      background-color: #ae1b1a; }
+  .follow-icon--youtube-w {
+    background-image: url(../images/social_icons/youtube.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/youtube.svg);
+    background-color: #fff; }
+    a:hover .follow-icon--youtube-w, a:focus .follow-icon--youtube-w {
+      background: #d9d9d9; }
+  .follow-icon--instagram {
+    background-image: url(../images/social_icons/instagram.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/instagram.svg);
+    background-size: 16px 16px;
+    background-color: #e1306c; }
+    a:hover .follow-icon--instagram, a:focus .follow-icon--instagram {
+      background-color: #bf295c; }
+  .follow-icon--pinterest {
+    background-image: url(../images/social_icons/pinterest.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/pinterest.svg);
+    background-size: 20px 20px;
+    background-color: #bd081c; }
+    a:hover .follow-icon--pinterest, a:focus .follow-icon--pinterest {
+      background-color: #a10718; }
+  .follow-icon--weibo {
+    background-image: url(../images/social_icons/weibo.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/weibo.svg);
+    background-size: 20px 20px;
+    background-color: #e6162d; }
+    a:hover .follow-icon--weibo, a:focus .follow-icon--weibo {
+      background-color: #c41326; }
+  .follow-icon--wechat {
+    background-image: url(../images/social_icons/wechat.png);
+    /* PNG Fallback */
+    background-image: url(../images/social_icons/wechat.svg);
+    background-size: 20px 20px;
+    background-color: #7bb32e; }
+    a:hover .follow-icon--wechat, a:focus .follow-icon--wechat {
+      background-color: #699827; }
+
+/*	end Follow PWC icons - based on SVG
+********************/
+/*	Follow PWC bar component
+********************/
+.follow-pwc-bar {
+  background: #404041;
+  /*	bar should never change colour*/
+  padding: 20px 0; }
+  .follow-pwc-bar .follow-pwc-bar__content {
+    display: inline-block; }
+  .follow-pwc-bar .follow-pwc-bar__text {
+    color: #fff;
+    display: block;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 3px 0 0;
+    line-height: 1.2em; }
+  .follow-pwc-bar .follow-pwc-bar__buttons {
+    float: left; }
+  .follow-pwc-bar .follow-pwc-bar__button {
+    display: block;
+    float: left;
+    margin: 0 6px 0 0; }
+  .follow-pwc-bar .follow-icon {
+    display: block; }
+  @media (max-width: 767px) {
+    .follow-pwc-bar .follow-pwc-bar__text {
+      padding-top: 3px; } }
+  @media (min-width: 768px) {
+    .follow-pwc-bar .follow-pwc-bar__content-wrapper {
+      text-align: center; } }
+  .page-dir--rtl .follow-pwc-bar {
+    direction: rtl; }
+    .page-dir--rtl .follow-pwc-bar .follow-pwc-bar__text {
+      margin: 0 0 0 20px;
+      padding: 0 0 0 3px; }
+    .page-dir--rtl .follow-pwc-bar .follow-pwc-bar__text,
+    .page-dir--rtl .follow-pwc-bar .follow-pwc-bar__buttons,
+    .page-dir--rtl .follow-pwc-bar .follow-pwc-bar__button {
+      float: right; }
+    .page-dir--rtl .follow-pwc-bar .follow-pwc-bar__button {
+      margin: 0 0 0 6px; }
+
+/*	end Follow PwC  bar component
+********************/

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" class="page-col-fam--red-burgundy-maroon page-primary-col--red page-secondary-col--burgundy page-third-col--maroon">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base template | Ui-components-static</title>
+
+    <!-- Bootstrap warning  -->
+    <!--
+          Important: Including the entire Bootstrap framework may negatively affect the supplied components.
+        -->
+
+    <!-- Include common CSS -->
+    <link href="assets/css/pwcTheme.css" rel="stylesheet" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <style>
+        .col-xs-15 {
+            width: 20%;
+            float: left;
+        }
+
+        .col-xs-15,
+        .col-sm-15,
+        .col-md-15,
+        .col-lg-15 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        @media only screen and (max-width:768px) {
+            .box {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-sm-15 {
+                width: 20%;
+                float: left;
+            }
+
+        }
+
+        @media (min-width: 992px) {
+            .col-md-15 {
+                width: 20%;
+                float: left;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col-lg-15 {
+                width: 20%;
+                float: left;
+            }
+        }
+
+        .col-5 {
+            width: 20%;
+
+        }
+
+        .box {
+            border: 1px solid #dfdfdf;
+            overflow: hidden;
+
+        }
+
+        .box-text {
+            background: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            min-height: 100px;
+        }
+
+        .box-img {
+            text-align: center;
+            padding: 20px;
+            height: 100px;
+        }
+
+        .category-info .box-img {
+            position: relative;
+        }
+
+        .category-info .box-img>img {
+            width: 135px;
+        }
+
+
+        .category-info .box {
+            margin-bottom: 15px;
+        }
+
+        .category-list li {
+            margin-bottom: 0px;
+            padding: 15px 0px;
+            text-align: center;
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        .category-list ul {
+            margin: 0px;
+        }
+
+        .category-list li:last-child {
+            border-bottom: 0px;
+        }
+
+        .category-list li.active-cat {
+            background: #e0301e;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="page-container" role="main">
+        <!-- Begin global header and navigation-->
+        <section class="page-section--no-pad ">
+
+
+
+            <link href="assets/css/global-slim-header.css" rel="stylesheet">
+            <script type="text/javascript" src="assets/js/vendor/headroom.min.js"></script>
+            <script type="text/javascript" src="assets/js/vendor/select2/js/select2.min.js"></script>
+            <script type="text/javascript" src="assets/js/components/global-slim-header.js"></script>
+
+
+
+
+
+            <!-- begin global slim header-->
+
+            <div class="glb-slim-header  glb-slim-header--simple glb-slim-header--togglebreadcrumb" id="glbSlimHeader">
+                <div class="glb-slim-header-wrapper" id="glbSlimHeaderWrapper">
+                    <div class="glb-slim-header__bar" id="glbSlimHeaderBar">
+                        <div class="container glb-slim-header__container">
+                            <div class=" glb-slim-header__flexrow">
+                                <!-- include brand-->
+                                <div class="  glb-slim-header__branding">
+                                    <a class="glb-slim-header__logo" href="http://www.pwc.com/gx/en.html">
+
+
+                                        <img alt="PwC" src="assets/images/header/PwC-logo.svg" class=" img-responsive">
+
+
+                                    </a>
+
+                                    <span class="glb-slim-header__divider " role="separator"></span>
+                                    <a class="glb-slim-header__subbrand" href="http://www.pwc.com/gx/en.html">ISAAC - Fintech Marketplace</a>
+                                </div>
+                                <!-- include global tools menu-->
+                                <div class=" glb-slim-header__nav-ctrls">
+                                    <div class=" glb-slim-header__tools">
+                                        <div class="glb-slim-header__tool glb-slim-header__tool--search glb-slim-header__tool--closed">
+                                            <button class="glb-slim-header__panel-trigger" data-toggle-gh-panel="true">
+                                                <span class="sr-only">Search</span>
+                                                <span class="icon-el icon-el--search">
+                                                    <span class="icon-el__normal"></span>
+                                                    <span class="icon-el__on"></span>
+                                                </span>
+                                            </button>
+                                            <div class="glb-slim-header__tool-content">
+                                                <div class="glb-slim-header__search">
+                                                    <form class="pwc-inline-form" role="search" action="/gx/en/search.html" method="get">
+                                                        <div class="pwc-inline-form__field form-group">
+                                                            <label class="sr-only " for="globalSearch">Search</label>
+                                                            <input type="text" class="form-control" id="globalSearch" name="globalSearch" placeholder="Search">
+                                                        </div>
+
+                                                        <button type="submit" class="sr-only btn btn--primary" role="button" tabIndex="-1">Submit</button>
+                                                    </form>
+                                                    <div class="glb-slim-header__search-suggestions">
+                                                        <p class="h6 glb-slim-header__search-suggestions__heading">Quick links</p>
+                                                        <div class="glb-slim-header__search-suggestion">
+                                                            <a class="h5 serif glb-slim-header__search-link" href="urlofsearchpage.html?q=abc">Industries</a>
+                                                        </div>
+                                                        <div class="glb-slim-header__search-suggestion">
+                                                            <a class="h5 serif glb-slim-header__search-link" href="urlofsearchpage.html?q=abc">Services</a>
+                                                        </div>
+                                                        <div class="glb-slim-header__search-suggestion">
+                                                            <a class="h5 serif glb-slim-header__search-link" href="urlofsearchpage.html?q=abc">Consulting</a>
+                                                        </div>
+                                                        <div class="glb-slim-header__search-suggestion">
+                                                            <a class="h5 serif glb-slim-header__search-link" href="urlofsearchpage.html?q=abc">Careers</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="glb-slim-header__tool glb-slim-header__tool--share glb-slim-header__tool--closed glb-slim-header__tool--desktop-only">
+                                            <button class="glb-slim-header__panel-trigger" href="#" data-toggle-gh-panel="true">
+                                                <span class="sr-only">Share this page</span>
+                                                <span class="icon-el icon-el--share">
+                                                    <span class="icon-el__normal"></span>
+                                                    <span class="icon-el__on"></span>
+                                                </span>
+                                            </button>
+                                            <div class="glb-slim-header__tool-content">
+
+
+                                                <link href="assets/css/page-sharing-panel.css" rel="stylesheet">
+
+
+
+                                                <!-- begin Panel sharing panel -->
+                                                <div class="dpe-component-wrapper page-sharing">
+                                                    <div class="page-sharing__share-options">
+                                                        <div class="page-sharing__share-options-content">
+                                                            <span class="page-sharing__share-title sr-only">Share this page</span>
+                                                            <div class="page-sharing__share-btns">
+                                                                <a class="page-sharing__share-btn" href="http://www.facebook.com/share.php?u=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--facebook">
+                                                                        <span class="sr-only">Facebook</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="http://twitter.com/home?status=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--twitter">
+                                                                        <span class="sr-only">Twitter</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--linkedin">
+                                                                        <span class="sr-only">Linkedin</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="https://plus.google.com/share?url=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--googleplus-alt">
+                                                                        <span class="sr-only">GooglePlus</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="https://pinterest.com/pin/create/button/?url=source&media=test&description=">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--pinterest">
+                                                                        <span class="sr-only">Pinterest</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- end Page sharing panel -->
+
+                                            </div>
+                                        </div>
+
+                                        <div class="glb-slim-header__tool glb-slim-header__tool--autosuggest glb-slim-header__tool--closed glb-slim-header__tool--desktop-only">
+                                            <button class="glb-slim-header__panel-trigger" data-toggle-gh-panel="true">
+                                                <span class="sr-only">Change country</span>
+                                                <span class="icon-el icon-el--territory">
+                                                    <span class="icon-el__normal"></span>
+                                                    <span class="icon-el__on"></span>
+                                                </span>
+                                            </button>
+                                            <div class="glb-slim-header__tool-content">
+
+                                                <form class="pwc-inline-form" action="urlforfallbackprocessingpage.html" method="get">
+                                                    <div class="pwc-inline-form__field pwc-inline-form__field--select2 pwc-inline-form__field--auto-suggest form-group">
+                                                        <label class="sr-only field-label " for="territorySelector">Change country</label>
+
+                                                        <select id="territorySelector" name="territorySelector" style="width: 100%;">
+                                                            <optgroup label="Choose a country:">
+                                                                <option value="http://pwc.com">Global</option>
+                                                                <option value="http://pwc.com.au" selected="">Australia</option>
+                                                                <option value="http://www.pwc.com/at">Austria</option>
+                                                                <option value="http://www.pwc.com/br">Brazil</option>
+                                                                <option value="http://www.pwc.com/ca">Canada</option>
+                                                                <option value="http://www.pwc.com/fr">France</option>
+                                                                <option value="http://www.pwc.com/de">Germany</option>
+                                                                <option value="http://www.pwc.com/cn-s/home">Greater China</option>
+                                                                <option value="http://www.pwc.com/in">India</option>
+                                                                <option value="http://www.pwc.com/il/home">Israel</option>
+                                                                <option value="http://www.pwc.com/it">Italy</option>
+                                                                <option value="http://www.pwc.com/jp/home">Japan</option>
+                                                                <option value="http://www.pwc.com/la/home">Argentina, Chile, Colombia, Peru, Venezuela</option>
+                                                                <option value="http://www.pwc.com/mx/home">México</option>
+                                                                <option value="http://www.pwc.com/me/home">UAE, Lebanon, Saudi Arabia, Egypt, Qatar</option>
+                                                                <option value="http://www.pwc.com/nl/home">Netherlands</option>
+                                                                <option value="http://www.pwc.com/nordic/home">Denmark, Finland, Norway, Sweden</option>
+                                                                <option value="http://www.pwc.com/na/home">USA</option>
+                                                                <option value="http://www.pwc.com/ru-e/home">Russia </option>
+                                                                <option value="http://www.pwc.com/es">Spain</option>
+                                                                <option value="http://www.pwc.com/za/home">South Africa</option>
+                                                                <option value="http://www.pwc.com/sea/home">Indonesia, Malaysia, Sing</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+
+                                                    <button type="submit" class="sr-only btn btn--primary" role="button">Submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button id="dropdownTrigger_lg" type="button" class="global-nav-block navbar-toggle glb-slim-header__navbar-toggle glb-slim-header__navbar-toggle--has-label"
+                                        data-toggle-nav="true">
+
+                                        <div class="icon-bar-wrapper">
+                                            <span class="icon-bar icon-bar1"></span>
+                                            <span class="icon-bar icon-bar2"></span>
+                                            <span class="icon-bar icon-bar3"></span>
+                                        </div>
+                                        <span class="text">Menu
+                                            <span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end .glb-slim-header__bar -->
+
+                    <!-- include .glb-slim-header-nav-wrap outside of .container.glb-slim-header__container element -->
+                    <div class=" glb-slim-header-nav-wrapper">
+                        <!-- include global nav takeover panel-->
+                        <link href="assets/css/global-nav.css" rel="stylesheet">
+                        <!-- Begin Global footer  component -->
+                        <div class="dpe-component-wrapper glb-nav glb-nav--tabbed " id="globalNav">
+                            <nav class="navbar ">
+                                <div class="container glb-nav__container">
+                                    <!-- need a container here...-->
+                                    <div class="glb-nav__links-wrapper">
+                                        <!-- Area for primary links relative to the current page i.e. sibling pages -->
+                                        <div class="glb-nav__primary-wrapper">
+                                            <ul class="nav navbar-nav glb-nav__primary-links">
+                                                <li class="">
+                                                    <a href="/Dipesh-Work/Clients/PwC-Dev-Portal/devPortal-download/base/index.html">
+                                                        <span class="text">Overview</span>
+                                                    </a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="/Dipesh-Work/Clients/PwC-Dev-Portal/devPortal-download/base/product.html">
+                                                        <span class="text">Products</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#">
+                                                        <span class="text">Industries</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#">
+                                                        <span class="text">Client Success Stories</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#">
+                                                        <span class="text">Contact us</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Area for promoted links / level 1 links-->
+                                        <div class="glb-nav__promoted-wrapper">
+                                            <ul class="nav navbar-nav navbar-right glb-nav__promoted-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="text">Member Login</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="text">PwC Login</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="glb-nav__tools">
+                                        <div class="glb-nav__tools__tool  ">
+                                            <div class="glb-nav__tools__tool-content">
+
+
+                                                <link href="assets/css/page-sharing-panel.css" rel="stylesheet">
+
+
+
+                                                <!-- begin Panel sharing panel -->
+                                                <div class="dpe-component-wrapper page-sharing">
+                                                    <div class="page-sharing__share-options">
+                                                        <div class="page-sharing__share-options-content">
+                                                            <span class="page-sharing__share-title sr-only">Share this page</span>
+                                                            <div class="page-sharing__share-btns">
+                                                                <a class="page-sharing__share-btn" href="http://www.facebook.com/share.php?u=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--facebook">
+                                                                        <span class="sr-only">Facebook</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="http://twitter.com/home?status=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--twitter">
+                                                                        <span class="sr-only">Twitter</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--linkedin">
+                                                                        <span class="sr-only">Linkedin</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="https://plus.google.com/share?url=http%3A//www.pwc.com/crimesurvey">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--googleplus-alt">
+                                                                        <span class="sr-only">GooglePlus</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="page-sharing__share-btn" href="https://pinterest.com/pin/create/button/?url=source&media=test&description=">
+                                                                    <span class="page-sharing__share-icon page-sharing__share-icon--pinterest">
+                                                                        <span class="sr-only">Pinterest</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- end Page sharing panel -->
+
+                                            </div>
+                                        </div>
+                                        <div class="glb-nav__tools__tool glb-nav__tools__tool--dropdown ">
+                                            <div class="glb-nav__tools__tool-content">
+
+                                                <form class="pwc-inline-form" action="urlforfallbackprocessingpage.html" method="get">
+                                                    <div class="pwc-inline-form__field pwc-inline-form__field--select2  pwc-inline-form__field--dropdown form-group">
+                                                        <label class="sr-only field-label " for="languageSelector">View this content in</label>
+
+
+                                                        <select id="languageSelector" name="languageSelector" style="width: 100%;">
+                                                            <optgroup label="Choose a language:">
+
+                                                                <option value="http://pwc.com/en/" selected="">English</option>
+                                                                <option value="http://pwc.com/fr/">French</option>
+                                                                <option value="http://pwc.com/nl/">Dutch</option>
+                                                            </optgroup>
+
+                                                        </select>
+                                                    </div>
+
+                                                    <button type="submit" class="sr-only btn btn--primary" role="button" tabIndex="-1">Submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="glb-nav__tools__tool glb-nav__tools__tool--dropdown ">
+                                            <div class="glb-nav__tools__tool-content">
+
+                                                <form class="pwc-inline-form" action="urlforfallbackprocessingpage.html" method="get">
+                                                    <div class="pwc-inline-form__field pwc-inline-form__field--select2 pwc-inline-form__field--auto-suggest form-group">
+                                                        <label class="sr-only field-label " for="territorySelector">Change country</label>
+
+                                                        <select id="territorySelector" name="territorySelector" style="width: 100%;">
+                                                            <optgroup label="Choose a country:">
+                                                                <option value="http://pwc.com">Global</option>
+                                                                <option value="http://pwc.com.au" selected="">Australia</option>
+                                                                <option value="http://www.pwc.com/at">Austria</option>
+                                                                <option value="http://www.pwc.com/br">Brazil</option>
+                                                                <option value="http://www.pwc.com/ca">Canada</option>
+                                                                <option value="http://www.pwc.com/fr">France</option>
+                                                                <option value="http://www.pwc.com/de">Germany</option>
+                                                                <option value="http://www.pwc.com/cn-s/home">Greater China</option>
+                                                                <option value="http://www.pwc.com/in">India</option>
+                                                                <option value="http://www.pwc.com/il/home">Israel</option>
+                                                                <option value="http://www.pwc.com/it">Italy</option>
+                                                                <option value="http://www.pwc.com/jp/home">Japan</option>
+                                                                <option value="http://www.pwc.com/la/home">Argentina, Chile, Colombia, Peru, Venezuela</option>
+                                                                <option value="http://www.pwc.com/mx/home">México</option>
+                                                                <option value="http://www.pwc.com/me/home">UAE, Lebanon, Saudi Arabia, Egypt, Qatar</option>
+                                                                <option value="http://www.pwc.com/nl/home">Netherlands</option>
+                                                                <option value="http://www.pwc.com/nordic/home">Denmark, Finland, Norway, Sweden</option>
+                                                                <option value="http://www.pwc.com/na/home">USA</option>
+                                                                <option value="http://www.pwc.com/ru-e/home">Russia </option>
+                                                                <option value="http://www.pwc.com/es">Spain</option>
+                                                                <option value="http://www.pwc.com/za/home">South Africa</option>
+                                                                <option value="http://www.pwc.com/sea/home">Indonesia, Malaysia, Sing</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+
+                                                    <button type="submit" class="sr-only btn btn--primary" role="button">Submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- end Global nav  component -->
+                    </div>
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    globalSlimHeader.init({
+                        applySelect2CountrySelector: true,
+                        applySelect2LanguageSelector: true
+                    });
+                });
+            </script>
+
+        </section>
+        <!-- End global header and navigation-->
+        <section class="bg-primary page-section--no-pad portal-ui__section portal-ui__section--allow-download" data-download-path="/components/sub-comp--heading.zip">
+            <div class="parsys sectionpar">
+                <link href="/pwc/ui-v3/developerPortal/assets/css/sub-comp-heading.css" rel="stylesheet">
+                <div class="sub-comp--heading sub-comp--heading--padding sub-comp--heading--bottom-pad sub-comp--heading--top-pad">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2 class="sub-comp--heading__title">Experience</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="parsys sectionpar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box category-list text-center">
+                                <ul>
+                                    <li class="active-cat">Industry</li>
+                                    <li>Insurance</li>
+                                    <li>Banks</li>
+                                    <li>NBFC</li>
+                                    <li>Trading and Exchanges</li>
+                                    <li class="active-cat">Department</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row category-info">
+                                <div class="col-md-3">
+                                    <a href="/Dipesh-Work/Clients/PwC-Dev-Portal/devPortal-download/base/category.html">
+                                        <div class="box">
+                                            <div class="box-img">
+                                                <img src="assets/images/blogs/content/cli1.png" />
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Channels/ Ecosystem</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="assets/images/blogs/content/cli2.png" />
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Experience</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="assets/images/blogs/content/cli3.png" />
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="assets/images/blogs/content/cli4.png" />
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Risk and Regulatory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="assets/images/blogs/content/cli2.png" />
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Horizontals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Usage note: END adding page sections here -->
+
+
+
+
+
+        <!-- Begin footer -->
+        <section class="page-section--no-pad page-section--col-black70">
+            <div class="parsys sectionpar">
+
+                <!-- Begin footer component -->
+
+
+
+
+                <link href="assets/css/global-footer.css" rel="stylesheet">
+                <script type="text/javascript" src="assets/js/components/footer.js"></script>
+
+
+
+
+                <!-- Begin Global footer  component -->
+                <div class="dpe-component-wrapper glb-footer glb-footer__block--reduced">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="glb-footer__disclaimer">
+                                    <div class="row">
+                                        <div class="col-md-8 glb-footer__disclaimer-text">
+                                            <p>&copy; 2011-2016 PwC. All rights reserved. PwC refers to the PwC network and/or
+                                                one or more of its member firms, each of which is a separate legal entity.
+                                                Please see
+                                                <a href="#">www.pwc.com/structure</a> for further details.</p>
+
+                                            <!-- optional disclaimer links -->
+                                            <ul class="glb-footer__disclaimer-links">
+                                                <li>
+                                                    <a href="#" target="_self">Privacy</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">Cookies info</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">Legal </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">Linking policy</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" target="_self">Site provider</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Global footer  component -->
+
+
+
+
+
+                <!-- End footer component -->
+            </div>
+        </section>
+        <!-- End footer -->
+
+
+    </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+
+    <!-- Include DPE JS-->
+
+</body>
+
+</html>

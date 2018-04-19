@@ -1,0 +1,72 @@
+/*	Inline quote
+********************/
+/*	quotes using specific component	*/
+.quote-component blockquote {
+  border: none;
+  border-left: 1px solid #e0301e;
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px; }
+
+.quote-component--has-margin blockquote {
+  margin: 20px 0; }
+
+@media (min-width: 768px) {
+  .quote-component--has-margin blockquote {
+    margin: 40px 0; } }
+
+.quote-component blockquote p {
+  color: #e0301e;
+  margin: 0; }
+
+.quote-component blockquote footer {
+  color: #6d6e71;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin: 0;
+  padding-top: 10px; }
+  .quote-component blockquote footer:before {
+    content: '';
+    /*	remove 'dash' that Bootstrap adds	*/ }
+
+.quote-component blockquote cite {
+  color: #6d6e71;
+  font-weight: normal; }
+
+/*	end quotes using specific component	*/
+/*	colour theming for all types of inline quotes: */
+.page-primary-col--orange .quote-component blockquote {
+  border-left-color: #d04a02; }
+
+.page-primary-col--orange .quote-component blockquote p {
+  color: #d04a02; }
+
+.page-primary-col--red .quote-component blockquote {
+  border-left-color: #e0301e; }
+
+.page-primary-col--red .quote-component blockquote p {
+  color: #e0301e; }
+
+.page-primary-col--burgundy .quote-component blockquote {
+  border-left-color: #a32020; }
+
+.page-primary-col--burgundy .quote-component blockquote p {
+  color: #a32020; }
+
+.page-primary-col--maroon .quote-component blockquote {
+  border-left-color: #602320; }
+
+.page-primary-col--maroon .quote-component blockquote p {
+  color: #602320; }
+
+.page-primary-col--rose .quote-component blockquote {
+  border-left-color: #d93954; }
+
+.page-primary-col--rose .quote-component blockquote p {
+  color: #d93954; }
+
+/*	end pull-quotes using specific component	*/

@@ -1,0 +1,131 @@
+/*	Featured item listing component
+********************/
+.featured-item-listing .featured-item-listing__block {
+  background-color: #f2f2f2;
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  margin-bottom: 30px; }
+  .featured-item-listing .featured-item-listing__block:last-child {
+    margin-bottom: 0; }
+  .featured-item-listing .featured-item-listing__block:hover {
+    background-color: #cecece; }
+    .featured-item-listing .featured-item-listing__block:hover .btn--featured-item {
+      background-color: #6d6e71;
+      border: 1px solid #6d6e71;
+      color: #fff; }
+  .no-flexbox .featured-item-listing .featured-item-listing__block {
+    background-color: transparent; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block .featured-item-listing__link {
+      background-color: #f2f2f2; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block .featured-item-listing__link:hover {
+        background-color: #cecece; }
+  .featured-item-listing .featured-item-listing__block .featured-item-listing__link {
+    height: 100%;
+    display: block;
+    text-decoration: none; }
+    .featured-item-listing .featured-item-listing__block .featured-item-listing__link .btn--featured-item {
+      margin-top: 10px;
+      display: inline-block; }
+    .featured-item-listing .featured-item-listing__block .featured-item-listing__link span.h3 {
+      margin-top: 0; }
+    .featured-item-listing .featured-item-listing__block .featured-item-listing__link .featured-item-listing__image {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .featured-item-listing .featured-item-listing__block .featured-item-listing__link .featured-item-listing__content {
+      border: 1px solid #ccc;
+      display: block;
+      padding: 20px; }
+      .featured-item-listing .featured-item-listing__block .featured-item-listing__link .featured-item-listing__content span.h3, .featured-item-listing .featured-item-listing__block .featured-item-listing__link .featured-item-listing__content span.lead {
+        display: block; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--dark .featured-item-listing__content {
+    border: 0; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--dark .featured-item-listing__content span.h3, .featured-item-listing .featured-item-listing__block.featured-item-listing__block--dark .featured-item-listing__content span.lead {
+      color: #fff; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--dark .featured-item-listing__content .btn--featured-item {
+      border: 1px solid #fff;
+      color: #fff; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--dark:hover .btn--featured-item {
+    color: #404041;
+    background: #fff;
+    border: 1px solid #fff; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--burgundy {
+    background-color: #a32020; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--burgundy:hover {
+      background-color: #8b1b1b; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--burgundy {
+      background-color: transparent; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--burgundy .featured-item-listing__link {
+        background-color: #a32020; }
+        .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--burgundy .featured-item-listing__link:hover {
+          background-color: #8b1b1b; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--grey {
+    background-color: #736b53; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--grey:hover {
+      background-color: #625b47; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--grey {
+      background-color: transparent; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--grey .featured-item-listing__link {
+        background-color: #736b53; }
+        .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--grey .featured-item-listing__link:hover {
+          background-color: #625b47; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--maroon {
+    background-color: #602320; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--maroon:hover {
+      background-color: #521e1b; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--maroon {
+      background-color: transparent; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--maroon .featured-item-listing__link {
+        background-color: #602320; }
+        .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--maroon .featured-item-listing__link:hover {
+          background-color: #521e1b; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--rose {
+    background-color: #d93954; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--rose:hover {
+      background-color: #b83047; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--rose {
+      background-color: transparent; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--rose .featured-item-listing__link {
+        background-color: #d93954; }
+        .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--rose .featured-item-listing__link:hover {
+          background-color: #b83047; }
+  .featured-item-listing .featured-item-listing__block.featured-item-listing__block--orange {
+    background-color: #d04a02; }
+    .featured-item-listing .featured-item-listing__block.featured-item-listing__block--orange:hover {
+      background-color: #b13f02; }
+    .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--orange {
+      background-color: transparent; }
+      .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--orange .featured-item-listing__link {
+        background-color: #d04a02; }
+        .no-flexbox .featured-item-listing .featured-item-listing__block.featured-item-listing__block--orange .featured-item-listing__link:hover {
+          background-color: #b13f02; }
+
+@media (min-width: 768px) {
+  .featured-item-listing.featured-item-listing--2-items, .featured-item-listing.featured-item-listing--2-items-image {
+    display: flex;
+    margin-left: -30px; }
+    .featured-item-listing.featured-item-listing--2-items .featured-item-listing__block, .featured-item-listing.featured-item-listing--2-items-image .featured-item-listing__block {
+      margin-left: 30px;
+      width: 50%;
+      margin-bottom: 0; }
+    .no-flexbox .featured-item-listing.featured-item-listing--2-items, .no-flexbox .featured-item-listing.featured-item-listing--2-items-image {
+      display: block;
+      margin-left: -15px;
+      margin-right: -15px;
+      box-sizing: border-box; }
+      .no-flexbox .featured-item-listing.featured-item-listing--2-items .featured-item-listing__block, .no-flexbox .featured-item-listing.featured-item-listing--2-items-image .featured-item-listing__block {
+        margin-left: 0;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 50%;
+        box-sizing: border-box; }
+    .featured-item-listing.featured-item-listing--2-items:after, .featured-item-listing.featured-item-listing--2-items-image:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0; } }

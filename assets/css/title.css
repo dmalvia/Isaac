@@ -1,0 +1,60 @@
+/* Title component related */
+#mainHeader {
+  padding-bottom: 18px; }
+
+#mainHeader h1 {
+  /*font-size: 38px;*/
+  /*font-weight: bold;*/
+  margin: 30px 0; }
+
+.bg-primary #mainHeader h1, .bg-primary #mainHeader p {
+  color: #fff; }
+
+#mainHeader h1 {
+  margin: 30px 0 10px; }
+
+#mainHeader p {
+  /*font-size: 18px;*/
+  margin-bottom: 14px; }
+
+#mainHeader p span, #mainHeader p strong {
+  white-space: nowrap;
+  padding-right: 14px; }
+
+#mainHeader p strong {
+  font-weight: normal; }
+
+#mainHeader p span {
+  /*font-size: 14px;*/
+  font-weight: bold; }
+
+#mainHeader p .pubdate {
+  /*font-size:14px;*/ }
+
+#mainHeader a {
+  color: #fff;
+  font-size: 1.142rem;
+  text-decoration: underline; }
+
+#mainHeader a:hover, #mainHeader a:focus {
+  color: #fff; }
+
+#mainHeader .languageList {
+  margin-top: 30px;
+  float: right; }
+
+#mainHeader .languageList li {
+  padding-bottom: 10px; }
+
+@media (max-width: 767px) {
+  #mainHeader .languageList {
+    float: none; }
+  #mainHeader .languageList li {
+    display: inline;
+    margin-right: 10px; } }
+
+@media (max-width: 600px) {
+  #mainHeader .caret {
+    display: none; }
+  #mainHeader span {
+    display: block; } }

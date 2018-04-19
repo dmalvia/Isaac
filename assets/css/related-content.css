@@ -1,0 +1,52 @@
+/* Related content
+********************/
+.related-content {
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .related-content {
+      padding: 40px 0; } }
+  .related-content .related-content__title {
+    margin: 0 0 20px; }
+  .related-content .related-content__item {
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .related-content .related-content__item {
+        margin-bottom: 0px; } }
+  .related-content a.related-content__item-link {
+    display: block;
+    text-decoration: none; }
+    .related-content a.related-content__item-link img {
+      margin-bottom: 20px; }
+    .related-content a.related-content__item-link .related-content__item-heading {
+      border-bottom: 2px solid transparent;
+      color: #404041;
+      display: inline;
+      line-height: 1.3em;
+      padding-bottom: 2px;
+      -ms-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      word-break: break-word;
+      /* all browsers - better than word-wrap property, as this has support for Chinese / Japanese / Korean  */ }
+    .related-content a.related-content__item-link:hover .related-content__item-heading, .related-content a.related-content__item-link:focus .related-content__item-heading {
+      border-bottom: 2px solid #e1301e;
+      /* Loop to create colour variations */ }
+      .page-primary-col--orange .related-content a.related-content__item-link:hover .related-content__item-heading, .page-primary-col--orange .related-content a.related-content__item-link:focus .related-content__item-heading {
+        border-bottom: 2px solid #d04a02; }
+      .page-primary-col--red .related-content a.related-content__item-link:hover .related-content__item-heading, .page-primary-col--red .related-content a.related-content__item-link:focus .related-content__item-heading {
+        border-bottom: 2px solid #e0301e; }
+      .page-primary-col--burgundy .related-content a.related-content__item-link:hover .related-content__item-heading, .page-primary-col--burgundy .related-content a.related-content__item-link:focus .related-content__item-heading {
+        border-bottom: 2px solid #a32020; }
+      .page-primary-col--maroon .related-content a.related-content__item-link:hover .related-content__item-heading, .page-primary-col--maroon .related-content a.related-content__item-link:focus .related-content__item-heading {
+        border-bottom: 2px solid #602320; }
+      .page-primary-col--rose .related-content a.related-content__item-link:hover .related-content__item-heading, .page-primary-col--rose .related-content a.related-content__item-link:focus .related-content__item-heading {
+        border-bottom: 2px solid #d93954; }
+  .related-content .related-content__item-abstract {
+    color: #6d6e71;
+    letter-spacing: 0;
+    margin-top: 8px;
+    margin-bottom: 0; }
+
+/* end Related content
+********************/

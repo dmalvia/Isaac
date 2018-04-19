@@ -1,0 +1,142 @@
+/*	Link Explorer component
+********************/
+.link-explorer {
+  padding: 40px 0; }
+  @media (min-width: 768px) {
+    .link-explorer {
+      padding: 80px 0; } }
+  .link-explorer.link-explorer--no-pad {
+    padding: 0; }
+  .link-explorer .link-explorer__intro-heading {
+    margin-top: 0; }
+  .link-explorer .link-explorer__intro-copy {
+    color: #6d6e71; }
+  .link-explorer .link-explorer__group {
+    padding-top: 20px; }
+    .link-explorer .link-explorer__group .link-explorer__group-heading {
+      border-top: 2px solid #e0301e;
+      color: #e0301e;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-top: 10px; }
+      .page-secondary-col--orange .link-explorer .link-explorer__group .link-explorer__group-heading {
+        border-top-color: #d04a02;
+        color: #d04a02; }
+      .page-secondary-col--red .link-explorer .link-explorer__group .link-explorer__group-heading {
+        border-top-color: #e0301e;
+        color: #e0301e; }
+      .page-secondary-col--burgundy .link-explorer .link-explorer__group .link-explorer__group-heading {
+        border-top-color: #a32020;
+        color: #a32020; }
+      .page-secondary-col--maroon .link-explorer .link-explorer__group .link-explorer__group-heading {
+        border-top-color: #602320;
+        color: #602320; }
+      .page-secondary-col--rose .link-explorer .link-explorer__group .link-explorer__group-heading {
+        border-top-color: #d93954;
+        color: #d93954; }
+      @media (min-width: 768px) {
+        .link-explorer .link-explorer__group .link-explorer__group-heading {
+          height: 5.716rem; } }
+    @media (min-width: 768px) {
+      .link-explorer .link-explorer__group {
+        padding-top: 40px; } }
+  .link-explorer .link-explorer__link, .link-explorer .link-explorer__link:link, .link-explorer .link-explorer__link:hover {
+    text-decoration: none; }
+  .link-explorer .link-explorer__link {
+    display: block;
+    margin: 0;
+    padding: 0 0 20px; }
+    .link-explorer .link-explorer__link .link-explorer__link-text {
+      border-bottom: 1px solid #ccc;
+      color: #404041;
+      cursor: pointer;
+      display: inline;
+      margin-top: 0;
+      padding-bottom: 2px;
+      text-decoration: none;
+      transition: all 200ms ease-in-out; }
+      @media (min-width: 768px) {
+        .link-explorer .link-explorer__link .link-explorer__link-text {
+          padding-bottom: 4px; } }
+    .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+      border-bottom: 2px solid #e0301e;
+      padding-bottom: 1px;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+          padding-bottom: 3px; } }
+      .page-secondary-col--orange .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+        border-bottom-color: #d04a02; }
+      .page-secondary-col--red .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+        border-bottom-color: #e0301e; }
+      .page-secondary-col--burgundy .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+        border-bottom-color: #a32020; }
+      .page-secondary-col--maroon .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+        border-bottom-color: #602320; }
+      .page-secondary-col--rose .link-explorer .link-explorer__link:hover .link-explorer__link-text {
+        border-bottom-color: #d93954; }
+  .link-explorer .link-explorer__link-abstract {
+    color: #6d6e71;
+    display: block;
+    line-height: 1.5em;
+    margin-top: 8px; }
+  @media (min-width: 992px) {
+    .link-explorer.link-explorer--3-col .link-explorer__intro {
+      padding-right: 30px; } }
+  @media (min-width: 992px) {
+    .link-explorer.link-explorer--3-col .link-explorer__group {
+      padding-top: 40px; } }
+  @media (min-width: 1200px) {
+    .link-explorer.link-explorer--3-col .link-explorer__group {
+      padding-top: 0px; } }
+  .link-explorer.link-explorer--3-col .link-explorer__link-abstract {
+    display: none; }
+  .link-explorer.component--col-dark .link-explorer__intro-heading {
+    color: #fff; }
+  .link-explorer.component--col-dark .link-explorer__intro-copy {
+    display: none; }
+  .link-explorer.component--col-dark .link-explorer__group .link-explorer__group-heading {
+    color: #fff;
+    border-top: 2px solid #fff; }
+  .link-explorer.component--col-dark .link-explorer__link .link-explorer__link-text {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .link-explorer.component--col-dark .link-explorer__link:hover .link-explorer__link-text {
+    border-bottom: 2px solid white; }
+  .link-explorer.component--col-dark .link-explorer__link-abstract {
+    display: none; }
+  .link-explorer.component--col-grey {
+    background: #736b53; }
+  .page-primary-col--orange .link-explorer.component--col-primary {
+    background: #d04a02; }
+  .page-secondary-col--orange .link-explorer.component--col-secondary {
+    background: #d04a02; }
+  .page-tertiary-col--orange .link-explorer.component--col-tertiary {
+    background: #d04a02; }
+  .page-primary-col--red .link-explorer.component--col-primary {
+    background: #e0301e; }
+  .page-secondary-col--red .link-explorer.component--col-secondary {
+    background: #e0301e; }
+  .page-tertiary-col--red .link-explorer.component--col-tertiary {
+    background: #e0301e; }
+  .page-primary-col--burgundy .link-explorer.component--col-primary {
+    background: #a32020; }
+  .page-secondary-col--burgundy .link-explorer.component--col-secondary {
+    background: #a32020; }
+  .page-tertiary-col--burgundy .link-explorer.component--col-tertiary {
+    background: #a32020; }
+  .page-primary-col--maroon .link-explorer.component--col-primary {
+    background: #602320; }
+  .page-secondary-col--maroon .link-explorer.component--col-secondary {
+    background: #602320; }
+  .page-tertiary-col--maroon .link-explorer.component--col-tertiary {
+    background: #602320; }
+  .page-primary-col--rose .link-explorer.component--col-primary {
+    background: #d93954; }
+  .page-secondary-col--rose .link-explorer.component--col-secondary {
+    background: #d93954; }
+  .page-tertiary-col--rose .link-explorer.component--col-tertiary {
+    background: #d93954; }
+
+/*	end Link Explorer component
+********************/

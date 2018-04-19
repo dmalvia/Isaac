@@ -1,0 +1,209 @@
+@import "../coloursMap";
+@import "../mixins";
+
+/*	Global contact form 
+********************/
+.contactUsForm .contactus{
+    .btn, .btn:link, .btn:hover, .btn:focus {
+        border-radius:0;
+        color:#fff;
+        display:inline-block;
+        padding: 14px 23px;
+        font-size: 1rem; /* 14px on desktop and 12px on mobile	*/
+        line-height: 1.14em; 
+        font-family: Arial, sans-serif;
+        font-weight:bold;
+        text-decoration:none;
+        -webkit-transition: background .2s ease-out;
+        -moz-transition: background .2s ease-out;
+        -o-transition: background .2s ease-out;
+        transition: background .2s ease-out;
+    }
+
+    .btn:hover {
+        cursor:pointer;	
+    }
+
+
+    button.btn[disabled] {
+        cursor: not-allowed;
+        filter: alpha(opacity=50);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .50;
+    }
+
+    /* Primary Button */
+    .btn--primary, .btn--primary:focus .btn--primary:hover, .btn--primary:active, .btn--primary:visited {
+        background:$red;
+        border-radius:0;
+        border: 1px solid transparent;
+        color:#fff;
+    }
+
+    .btn--primary:focus, .btn--primary:hover {
+    background:$redShade15;
+    }
+
+    .btn--primary:active {
+    background:$redShade20;  
+    }
+
+    /* Secondary Button */
+    .btn--transparent, .btn--transparent:link, .btn--transparent:visited{
+    	background:transparent;
+    	border:1px solid $black70;
+    	color:$black;
+    }
+
+    .btn--transparent:hover, .btn--transparent:focus {
+    	background: $black70;
+    	border: 1px solid $black70;
+    	color:#fff;
+    }
+
+    .btn--transparent:active{
+    	background: $black;
+    	border-color: $black;
+        color: #fff;
+    }
+}
+
+
+
+/* Colour themes */
+// .page-primary-col--red {
+//     .btn--primary {
+//         background:$red;
+        
+//         &:focus, &:hover {
+//             background:$redShade15;
+//         }
+
+       
+//         &:active {
+//             background:$redShade20;
+//         }
+//     }
+//     .cta-btn {
+//         background:$red;
+//         &:focus, &:hover {
+//             background:$redShade15;
+//         }
+
+       
+//         &:active {
+//             background:$redShade20;
+//         }
+//     }
+// }
+
+// .page-primary-col--orange {
+//     .btn--primary {
+//         background:$orange;
+        
+//         &:focus, &:hover {
+//             background:$orangeShade15;
+//         }
+
+       
+//         &:active {
+//             background:$orangeShade20;
+//         }
+//     }
+//     .cta-btn {
+//         background:$orange;
+//         &:focus, &:hover {
+//             background:$orangeShade15;
+//         }
+
+       
+//         &:active {
+//             background:$orangeShade20;
+//         }
+//     }
+// }
+
+// .page-primary-col--rose {
+//     .btn--primary {
+//     background:$rose;
+        
+//         &:focus, &:hover {
+//             background:$roseShade15;
+//         }
+
+       
+//         &:active {
+//             background:$roseShade20;
+//         }
+//     }
+//     .cta-btn {
+//         background:$rose;
+//         &:focus, &:hover {
+//             background:$roseShade15;
+//         }
+
+       
+//         &:active {
+//             background:$roseShade20;
+//         }
+//     }
+// }
+
+// .page-primary-col--burgundy {
+//     .btn--primary {
+//     background:$burgundy;
+        
+//         &:focus, &:hover {
+//         background:$burgundyShade15;
+//         }
+
+       
+//         &:active {
+//         background:$burgundyShade20;
+//         }
+//     }
+//     .cta-btn {
+//         background:$burgundy;
+//         &:focus, &:hover {
+//             background:$burgundyShade15;
+//         }
+
+       
+//         &:active {
+//             background:$burgundyShade20;
+//         }
+//     }
+// }
+
+// .page-primary-col--maroon {
+//     .btn--primary {
+//         background:$maroon;
+        
+//         &:focus, &:hover {
+//             background:$maroonShade15;
+//         }
+
+       
+//         &:active {
+//             background:$maroonShade20;
+//         }
+//     }
+//     .cta-btn {
+//         background:$maroon;
+
+//         &:focus, &:hover {
+//             background:$maroonShade15;
+//         }
+
+       
+//         &:active {
+//             background:$maroonShade20;
+//         }
+//     }
+// }
+
+
+
+/*	end Global contact form 
+********************/
